@@ -1,0 +1,11 @@
+CompileFlags:
+  Add:
+    - --cuda-path=/usr/local/cuda-12.3
+    - --cuda-gpu-arch=sm_70
+  Remove:
+    - -forward-unknown-to-host-compiler
+    - --compiler-options=-Wall
+    - --generate-code*
+    - --compiler-options=-Wextra
+    - --expt-extended-lambda
+    - --expt-relaxed-constexpr
