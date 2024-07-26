@@ -290,6 +290,122 @@ __global__ void kv_inter_group_insert(key_type *keys,
   }
 }
 
+
+
+__global__ void groupby_agg_and_statistic_kernel(key_type *groupby_keys, 
+                                                 val_type *agg_vals, 
+                                                 key_type *ht_keys, 
+                                                 val_type *ht_vals,
+                                                 u_int32_t *indicator,
+                                                 u_int32_t *block_result_num,
+                                                 size_t kv_num, 
+                                                 size_t Capacity,
+                                                 key_type empty_key) 
+{
+
+  // for record increaded group from this thread block
+  __shared__ uint32_t increased_group_counter;
+  //
+
+  cuco::detail::MurmurHash3_32<key_type> hf;
+
+  auto bx = blockIdx.x;
+  auto tx = threadIdx.x;
+  auto kv_ind = bx * blockDim.x + tx;
+
+  if (tx == 0) {
+    increased_group_counter = 0;
+  }
+  __syncthreads();
+
+  if (kv_ind >= kv_num)
+  {
+    return;
+  }
+
+  auto groupby_key = groupby_keys[kv_ind];
+  auto agg_val = agg_vals[kv_ind];
+  auto insert_loc = hf(groupby_key) % Capacity;
+
+  while (1) {
+    auto prev = atomicCAS(&ht_keys[insert_loc], empty_key, groupby_key);
+
+    if (prev == empty_key) {
+      indicator[insert_loc] = 1;
+      atomicAdd(&ht_vals[insert_loc], agg_val);
+      atomicAdd(&increased_group_counter, 1);
+      break;
+    }
+
+    if (prev == groupby_key) {
+      atomicAdd(&ht_vals[insert_loc], agg_val);
+      break;
+    }
+
+    insert_loc = (insert_loc + 1) % Capacity;
+  }
+
+  __syncthreads();
+  if (tx == 0) {
+    block_result_num[bx] += increased_group_counter;
+  }
+}
+
+
+__global__ void device_reduce_kernel(u_int32_t *reduce_array, u_int32_t n, u_int32_t *sum) {
+  __shared__ uint32_t ras[BLOCK_THREADS_NUM];
+  auto tx = threadIdx.x;
+  auto bx = blockIdx.x;
+  auto segment = 2 * blockDim.x *bx;
+  auto ind = segment + tx;
+  ras[tx] = 0;
+  if (ind < n) {
+    ras[tx] = reduce_array[ind];
+  }
+  if (ind + BLOCK_THREADS_NUM < n) {
+    ras[tx] += reduce_array[ind + BLOCK_THREADS_NUM];
+  }
+
+  for (u_int32_t stride = BLOCK_THREADS_NUM / 2; stride >= 1; stride /= 2) {
+    __syncthreads();
+    if (tx < stride) {
+      ras[tx] += ras[tx + stride];
+    }
+  }
+
+  if (tx == 0) {
+    atomicAdd(sum, ras[0]);
+  }
+}
+
+__global__ void collect_kv_in_ht(key_type *ht_keys,
+                                 val_type *ht_vals,
+                                 u_int32_t *indicator,
+                                 key_type *collect_keys,
+                                 val_type *collect_vals,
+                                 size_t Capacity,
+                                 key_type empty_key)
+{
+  auto bx = blockIdx.x;
+  auto tx = threadIdx.x;
+  auto ind = bx * blockDim.x + tx;
+
+  if (ind >= Capacity)
+  {
+    return;
+  }
+  auto ht_key = ht_keys[ind];
+  if (ht_key == empty_key)
+  {
+    return;
+  }
+
+  auto ht_val = ht_vals[ind];
+  auto collect_loc = indicator[ind];
+  collect_keys[collect_loc] = ht_key;
+  collect_vals[collect_loc] = ht_val;
+}
+
 template 
 __global__ void hash_into_one_third_ht(u_int32_t *, 
                                        u_int32_t *, 

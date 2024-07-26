@@ -79,8 +79,6 @@ class par_result {
     end_indicator.insert(end_indicator.end(), pr.end_indicator.begin(), pr.end_indicator.end());
     size += pr.size;
   }
-
-  uint32_t Size() { return size; }
 };
 
 void update_par_result_task(key_type *tile_key_buffer,

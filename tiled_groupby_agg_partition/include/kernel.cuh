@@ -67,3 +67,23 @@ __global__ void kv_inter_group_insert(key_type *keys,
                                       size_t kv_num,
                                       u_int32_t *par_rec_num_scan, 
                                       size_t P);
+
+__global__ void groupby_agg_and_statistic_kernel(key_type *groupby_keys, 
+                                                 val_type *agg_vals, 
+                                                 key_type *ht_keys, 
+                                                 val_type *ht_vals,
+                                                 u_int32_t *indicator,
+                                                 u_int32_t *block_result_num,
+                                                 size_t kv_num, 
+                                                 size_t Capacity,
+                                                 key_type empty_key);
+
+__global__ void device_reduce_kernel(u_int32_t *reduce_array, u_int32_t n, u_int32_t *sum);
+
+__global__ void collect_kv_in_ht(key_type *ht_keys,
+                                 val_type *ht_vals,
+                                 u_int32_t *indicator,
+                                 key_type *collect_keys,
+                                 val_type *collect_vals,
+                                 size_t Capacity,
+                                 key_type empty_key);
