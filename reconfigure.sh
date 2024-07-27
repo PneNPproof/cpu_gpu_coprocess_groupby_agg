@@ -1,4 +1,4 @@
 cmake --version
 rm -rf build
-cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
+cmake -S . -B build
 cmake --build build -j

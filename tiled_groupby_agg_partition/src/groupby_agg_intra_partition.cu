@@ -107,6 +107,15 @@ static void par_result_in_continous_mem(par_result &pr, key_type *kc_begin, val_
 }
 
 
+u_int32_t* _copy_to_host_display(u_int32_t *device_arr, size_t len, cudaStream_t stream)
+{
+  u_int32_t *host_arr;
+  host_arr = (u_int32_t *)malloc(sizeof(u_int32_t)*len);
+  cudaMemcpyAsync(host_arr, device_arr, sizeof(u_int32_t)*len, cudaMemcpyDeviceToHost, stream);
+  cudaStreamSynchronize(stream);
+  return host_arr;
+}
+
 void groupby_agg_and_statistic(key_type *groupby_keys, 
                                val_type *agg_vals, 
                                key_type *ht_keys, 
@@ -269,13 +278,17 @@ void groupby_agg_intra_partition_thread(std::vector<par_result> &par_result_vec,
   //
 }
 
+
+
 void groupby_agg_intra_partition(std::vector<par_result> &par_result_vec,
                                       key_type *&host_groupby_keys_result,
                                       val_type *&host_agg_vals_result,
                                       size_t Capacity,
                                       size_t min_load_num,
                                       size_t max_load_num,
-                                      size_t nstreams)
+                                      size_t nstreams,
+                                      std::vector<size_t> &par_kv_begin,
+                                      std::vector<size_t> &par_result_kv_num)
 {
   // Merge partitions to make the partition size as close to K as possible 
   par_result_vec = merge_partition(par_result_vec, min_load_num);
@@ -288,8 +301,10 @@ void groupby_agg_intra_partition(std::vector<par_result> &par_result_vec,
 
   // decide max result kv num
   size_t max_kv_num = 0;
-  std::vector<size_t> par_kv_begin;
-  std::vector<size_t> par_result_kv_num(par_num);
+  // std::vector<size_t> par_kv_begin;
+  // std::vector<size_t> par_result_kv_num(par_num);
+  par_kv_begin.reserve(par_num);
+  par_result_kv_num.resize(par_num);
   for (size_t i=0; i<par_num; i++) {
     par_kv_begin.push_back(max_kv_num);
     max_kv_num += par_result_vec[i].size;
@@ -322,6 +337,8 @@ void groupby_agg_intra_partition(std::vector<par_result> &par_result_vec,
   u_int32_t *d_in;
   size_t temp_storage_bytes = 0;
   cub::DeviceScan::ExclusiveSum(d_temp_storage, temp_storage_bytes, d_in, d_in, Capacity);
+  auto residual = temp_storage_bytes % 8;
+  temp_storage_bytes += (8-residual);
   
 
   auto dev_ptr = pre_alloc_device_memory(groupby_keys,
@@ -378,4 +395,17 @@ void groupby_agg_intra_partition(std::vector<par_result> &par_result_vec,
     cudaStreamSynchronize(streams[i]);
     cudaStreamDestroy(streams[i]);
   }
+
+  // free space
+  cudaFree(dev_ptr);
+  cudaFreeHost(stream_real_time_result_num);
+  free(groupby_keys);
+  free(agg_vals);
+  free(ht_keys);
+  free(ht_vals);
+  free(indicator);
+  free(temp_storage);
+  free(block_result_num);
+  free(streams);
+  //
 }

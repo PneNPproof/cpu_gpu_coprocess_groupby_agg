@@ -12,3 +12,4 @@
 - [] attention reduce kernel one thread deal with two item
 - [] hash function random seed
 - [] how to set tile_len
+- [] attention alignment problem

@@ -291,7 +291,6 @@ __global__ void kv_inter_group_insert(key_type *keys,
 }
 
 
-
 __global__ void groupby_agg_and_statistic_kernel(key_type *groupby_keys, 
                                                  val_type *agg_vals, 
                                                  key_type *ht_keys, 
@@ -347,7 +346,7 @@ __global__ void groupby_agg_and_statistic_kernel(key_type *groupby_keys,
 
   __syncthreads();
   if (tx == 0) {
-    block_result_num[bx] += increased_group_counter;
+    block_result_num[bx] = increased_group_counter;
   }
 }
 

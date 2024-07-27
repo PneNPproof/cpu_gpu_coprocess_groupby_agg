@@ -8,4 +8,6 @@ void groupby_agg_intra_partition(std::vector<par_result> &par_result_vec,
                                       size_t Capacity,
                                       size_t min_load_num,
                                       size_t max_load_num,
-                                      size_t nstreams);
+                                      size_t nstreams,
+                                      std::vector<size_t> &par_kv_begin,
+                                      std::vector<size_t> &par_result_kv_num);

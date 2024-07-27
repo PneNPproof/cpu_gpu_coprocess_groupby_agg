@@ -11,6 +11,7 @@
 
 #include "data_generator.hpp"
 #include "group_then_partition.cuh"
+#include "groupby_agg_intra_partition.cuh"
 #include "CLI11.hpp"
 
 typedef u_int32_t k_type;
@@ -98,7 +99,11 @@ int main(int argc, char *argv[])
   app.add_option("-c", cardinality_percentage);
   app.add_option("-d", dist_kind);
   app.add_option("-l", tile_len);
-  CLI11_PARSE(app,argc,argv);
+  CLI11_PARSE(app, argc, argv);
+
+  auto Capacity = tile_len;
+  size_t min_load_num = Capacity * 3 / 5;
+  size_t max_load_num = Capacity * 4 / 5;
 
   // allocate host_keys and host_vals
   
@@ -118,16 +123,12 @@ int main(int argc, char *argv[])
   // cudaMallocHost(&host_ht_keys, sizeof(k_type) * kv_num);
 
   // for generate random dist and hf
-  // std::srand(std::time(nullptr));
+  std::srand(std::time(nullptr));
   std::random_device r;
   std::default_random_engine generator(r());
 
   // generate kv
   generate_various_dist_kv_array<k_type, v_type>(host_keys, host_vals, cardinality, kv_num, skew_factor, generator, dist_kind, empty_key);
-
-  // for (int j=0; j<10; j++) {
-  //   printf("host_keys %u\n\n", host_keys[j]);
-  // }
 
   std::vector<par_result> par_result_vec(P);
   gpu_warm_up();
@@ -140,7 +141,29 @@ int main(int argc, char *argv[])
                                         par_result_vec,
                                         nstreams);
   
-  for (size_t i=0; i<P; i++){
-    std::cout<<par_result_vec[i].size<<std::endl;
+  // for (size_t i=0; i<P; i++){
+  //   std::cout<<par_result_vec[i].size<<std::endl;
+  // }
+  key_type *host_groupby_keys_result;
+  val_type *host_agg_vals_result;
+  std::vector<size_t> par_kv_begin;
+  std::vector<size_t> par_result_kv_num;
+
+  groupby_agg_intra_partition(par_result_vec,
+                              host_groupby_keys_result,
+                              host_agg_vals_result,
+                              Capacity,
+                              min_load_num,
+                              max_load_num,
+                              nstreams,
+                              par_kv_begin,
+                              par_result_kv_num);
+
+  size_t result_kv_num = 0;
+  for (size_t i=0; i<par_result_kv_num.size(); i++)
+  {
+    result_kv_num += par_result_kv_num[i];
   }
+  printf("result kv num: %ld\n", result_kv_num);
+  
 }

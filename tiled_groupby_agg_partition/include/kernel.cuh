@@ -1,5 +1,7 @@
 #pragma once
 #include <cstdlib>
+#include "util.cuh"
+
 
 template<typename key_type, typename val_type>
 __global__ void hash_into_one_third_ht(key_type *groupby_keys, 

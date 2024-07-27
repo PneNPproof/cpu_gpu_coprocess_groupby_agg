@@ -16,6 +16,7 @@ set(TARGET_NAME ${STATIC_LIB_NAME})
 
 include_directories(${PROJECT_SOURCE_DIR}/include)
 add_library(${TARGET_NAME} STATIC
+            ${PROJECT_SOURCE_DIR}/src/groupby_agg_intra_partition.cu
             ${PROJECT_SOURCE_DIR}/src/group_then_partition.cu
             ${PROJECT_SOURCE_DIR}/src/kernel.cu
             ${PROJECT_SOURCE_DIR}/src/util.cu
