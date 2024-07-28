@@ -89,12 +89,12 @@ int main(int argc, char *argv[])
   query_gpu_info();
 
   CLI::App app;
-  size_t kv_num = 1e8;
+  size_t kv_num = 1e9;
   size_t cardinality_percentage = 10;
   int dist_kind = 0;
-  size_t tile_len = 1e6;
+  size_t tile_len = 1e7;
   size_t P = 300;
-  size_t nstreams = 4;
+  size_t nstreams = 1;
   app.add_option("-n", kv_num);
   app.add_option("-c", cardinality_percentage);
   app.add_option("-d", dist_kind);
