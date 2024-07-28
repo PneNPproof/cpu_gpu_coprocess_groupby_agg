@@ -94,7 +94,7 @@ int main(int argc, char *argv[])
   int dist_kind = 0;
   size_t tile_len = 1e6;
   size_t P = 300;
-  size_t nstreams = 1;
+  size_t nstreams = 4;
   app.add_option("-n", kv_num);
   app.add_option("-c", cardinality_percentage);
   app.add_option("-d", dist_kind);
