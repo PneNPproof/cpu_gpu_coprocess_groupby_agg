@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <cub/cub.cuh>
 
-#ifdef MEASURE_TIME
+// #ifdef MEASURE_TIME
 #include <chrono>
 #include <string>
 class RuntimeMeasurement {
@@ -17,14 +17,14 @@ public:
     }
 
     inline void print_elapsed_time(std::string info) {
-        auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(end_time - start_time);
-        std::cout << info << " elapsed time: " << duration.count() << " milliseconds\n";
+        auto duration = std::chrono::duration_cast<std::chrono::microseconds>(end_time - start_time);
+        std::cout << info << " elapsed time: " << duration.count() << " microseconds\n";
     }
 
 private:
     std::chrono::steady_clock::time_point start_time, end_time;
 };
-#endif
+// #endif
 
 typedef u_int32_t key_type;
 typedef u_int32_t val_type;

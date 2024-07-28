@@ -1,0 +1,2703 @@
+generate complete
+
+groupby_agg_partition copy in elapsed time: 7489 microseconds
+kernel 1 elapsed time: 1203 microseconds
+kernel 2 elapsed time: 490 microseconds
+kernel 3 elapsed time: 263 microseconds
+kernel 4 elapsed time: 4847 microseconds
+kernel 5 elapsed time: 291 microseconds
+kernel 6 elapsed time: 812 microseconds
+kernel 7 elapsed time: 1096 microseconds
+groupby_agg_partition copy out elapsed time: 6713 microseconds
+groupby_agg_partition copy in elapsed time: 7636 microseconds
+kernel 1 elapsed time: 890 microseconds
+kernel 2 elapsed time: 129 microseconds
+kernel 3 elapsed time: 254 microseconds
+kernel 4 elapsed time: 4838 microseconds
+kernel 5 elapsed time: 277 microseconds
+kernel 6 elapsed time: 787 microseconds
+kernel 7 elapsed time: 1081 microseconds
+groupby_agg_partition copy out elapsed time: 6576 microseconds
+groupby_agg_partition copy in elapsed time: 6622 microseconds
+kernel 1 elapsed time: 890 microseconds
+kernel 2 elapsed time: 122 microseconds
+kernel 3 elapsed time: 256 microseconds
+kernel 4 elapsed time: 4824 microseconds
+kernel 5 elapsed time: 283 microseconds
+kernel 6 elapsed time: 784 microseconds
+kernel 7 elapsed time: 1083 microseconds
+groupby_agg_partition copy out elapsed time: 6265 microseconds
+groupby_agg_partition copy in elapsed time: 6629 microseconds
+kernel 1 elapsed time: 888 microseconds
+kernel 2 elapsed time: 129 microseconds
+kernel 3 elapsed time: 256 microseconds
+kernel 4 elapsed time: 4872 microseconds
+kernel 5 elapsed time: 278 microseconds
+kernel 6 elapsed time: 785 microseconds
+kernel 7 elapsed time: 1079 microseconds
+groupby_agg_partition copy out elapsed time: 6259 microseconds
+groupby_agg_partition copy in elapsed time: 6633 microseconds
+kernel 1 elapsed time: 886 microseconds
+kernel 2 elapsed time: 130 microseconds
+kernel 3 elapsed time: 253 microseconds
+kernel 4 elapsed time: 4851 microseconds
+kernel 5 elapsed time: 278 microseconds
+kernel 6 elapsed time: 784 microseconds
+kernel 7 elapsed time: 1081 microseconds
+groupby_agg_partition copy out elapsed time: 6254 microseconds
+groupby_agg_partition copy in elapsed time: 6632 microseconds
+kernel 1 elapsed time: 890 microseconds
+kernel 2 elapsed time: 120 microseconds
+kernel 3 elapsed time: 253 microseconds
+kernel 4 elapsed time: 4843 microseconds
+kernel 5 elapsed time: 286 microseconds
+kernel 6 elapsed time: 785 microseconds
+kernel 7 elapsed time: 1083 microseconds
+groupby_agg_partition copy out elapsed time: 6260 microseconds
+groupby_agg_partition copy in elapsed time: 6634 microseconds
+kernel 1 elapsed time: 888 microseconds
+kernel 2 elapsed time: 122 microseconds
+kernel 3 elapsed time: 259 microseconds
+kernel 4 elapsed time: 4823 microseconds
+kernel 5 elapsed time: 277 microseconds
+kernel 6 elapsed time: 786 microseconds
+kernel 7 elapsed time: 1081 microseconds
+groupby_agg_partition copy out elapsed time: 6270 microseconds
+groupby_agg_partition copy in elapsed time: 6624 microseconds
+kernel 1 elapsed time: 886 microseconds
+kernel 2 elapsed time: 122 microseconds
+kernel 3 elapsed time: 252 microseconds
+kernel 4 elapsed time: 4876 microseconds
+kernel 5 elapsed time: 274 microseconds
+kernel 6 elapsed time: 784 microseconds
+kernel 7 elapsed time: 1082 microseconds
+groupby_agg_partition copy out elapsed time: 6237 microseconds
+groupby_agg_partition copy in elapsed time: 6623 microseconds
+kernel 1 elapsed time: 887 microseconds
+kernel 2 elapsed time: 120 microseconds
+kernel 3 elapsed time: 252 microseconds
+kernel 4 elapsed time: 4857 microseconds
+kernel 5 elapsed time: 280 microseconds
+kernel 6 elapsed time: 785 microseconds
+kernel 7 elapsed time: 1084 microseconds
+groupby_agg_partition copy out elapsed time: 6260 microseconds
+groupby_agg_partition copy in elapsed time: 6625 microseconds
+kernel 1 elapsed time: 892 microseconds
+kernel 2 elapsed time: 123 microseconds
+kernel 3 elapsed time: 261 microseconds
+kernel 4 elapsed time: 4826 microseconds
+kernel 5 elapsed time: 277 microseconds
+kernel 6 elapsed time: 785 microseconds
+kernel 7 elapsed time: 1081 microseconds
+groupby_agg_partition copy out elapsed time: 6204 microseconds
+groupby_agg_partition copy in elapsed time: 6626 microseconds
+kernel 1 elapsed time: 902 microseconds
+kernel 2 elapsed time: 136 microseconds
+kernel 3 elapsed time: 253 microseconds
+kernel 4 elapsed time: 4832 microseconds
+kernel 5 elapsed time: 279 microseconds
+kernel 6 elapsed time: 786 microseconds
+kernel 7 elapsed time: 1082 microseconds
+groupby_agg_partition copy out elapsed time: 6040 microseconds
+groupby_agg_partition copy in elapsed time: 6623 microseconds
+kernel 1 elapsed time: 890 microseconds
+kernel 2 elapsed time: 123 microseconds
+kernel 3 elapsed time: 251 microseconds
+kernel 4 elapsed time: 4843 microseconds
+kernel 5 elapsed time: 276 microseconds
+kernel 6 elapsed time: 785 microseconds
+kernel 7 elapsed time: 1087 microseconds
+groupby_agg_partition copy out elapsed time: 6031 microseconds
+groupby_agg_partition copy in elapsed time: 6605 microseconds
+kernel 1 elapsed time: 702 microseconds
+kernel 2 elapsed time: 98 microseconds
+kernel 3 elapsed time: 207 microseconds
+kernel 4 elapsed time: 3668 microseconds
+kernel 5 elapsed time: 232 microseconds
+kernel 6 elapsed time: 431 microseconds
+kernel 7 elapsed time: 662 microseconds
+groupby_agg_partition copy out elapsed time: 6025 microseconds
+groupby_agg_partition copy in elapsed time: 6599 microseconds
+kernel 1 elapsed time: 700 microseconds
+kernel 2 elapsed time: 97 microseconds
+kernel 3 elapsed time: 208 microseconds
+kernel 4 elapsed time: 3661 microseconds
+kernel 5 elapsed time: 234 microseconds
+kernel 6 elapsed time: 432 microseconds
+kernel 7 elapsed time: 668 microseconds
+groupby_agg_partition copy out elapsed time: 6018 microseconds
+groupby_agg_partition copy in elapsed time: 6594 microseconds
+kernel 1 elapsed time: 701 microseconds
+kernel 2 elapsed time: 98 microseconds
+kernel 3 elapsed time: 211 microseconds
+kernel 4 elapsed time: 3686 microseconds
+kernel 5 elapsed time: 227 microseconds
+kernel 6 elapsed time: 431 microseconds
+kernel 7 elapsed time: 662 microseconds
+groupby_agg_partition copy out elapsed time: 6018 microseconds
+groupby_agg_partition copy in elapsed time: 6598 microseconds
+kernel 1 elapsed time: 702 microseconds
+kernel 2 elapsed time: 99 microseconds
+kernel 3 elapsed time: 211 microseconds
+kernel 4 elapsed time: 3689 microseconds
+kernel 5 elapsed time: 233 microseconds
+kernel 6 elapsed time: 432 microseconds
+kernel 7 elapsed time: 657 microseconds
+groupby_agg_partition copy out elapsed time: 6031 microseconds
+groupby_agg_partition copy in elapsed time: 6597 microseconds
+kernel 1 elapsed time: 702 microseconds
+kernel 2 elapsed time: 97 microseconds
+kernel 3 elapsed time: 208 microseconds
+kernel 4 elapsed time: 3649 microseconds
+kernel 5 elapsed time: 231 microseconds
+kernel 6 elapsed time: 431 microseconds
+kernel 7 elapsed time: 671 microseconds
+groupby_agg_partition copy out elapsed time: 6034 microseconds
+groupby_agg_partition copy in elapsed time: 6602 microseconds
+kernel 1 elapsed time: 700 microseconds
+kernel 2 elapsed time: 99 microseconds
+kernel 3 elapsed time: 210 microseconds
+kernel 4 elapsed time: 3658 microseconds
+kernel 5 elapsed time: 229 microseconds
+kernel 6 elapsed time: 431 microseconds
+kernel 7 elapsed time: 659 microseconds
+groupby_agg_partition copy out elapsed time: 6016 microseconds
+groupby_agg_partition copy in elapsed time: 6599 microseconds
+kernel 1 elapsed time: 700 microseconds
+kernel 2 elapsed time: 99 microseconds
+kernel 3 elapsed time: 208 microseconds
+kernel 4 elapsed time: 3677 microseconds
+kernel 5 elapsed time: 233 microseconds
+kernel 6 elapsed time: 430 microseconds
+kernel 7 elapsed time: 651 microseconds
+groupby_agg_partition copy out elapsed time: 6041 microseconds
+groupby_agg_partition copy in elapsed time: 6598 microseconds
+kernel 1 elapsed time: 701 microseconds
+kernel 2 elapsed time: 98 microseconds
+kernel 3 elapsed time: 211 microseconds
+kernel 4 elapsed time: 3664 microseconds
+kernel 5 elapsed time: 231 microseconds
+kernel 6 elapsed time: 431 microseconds
+kernel 7 elapsed time: 668 microseconds
+groupby_agg_partition copy out elapsed time: 6023 microseconds
+groupby_agg_partition copy in elapsed time: 6595 microseconds
+kernel 1 elapsed time: 702 microseconds
+kernel 2 elapsed time: 99 microseconds
+kernel 3 elapsed time: 208 microseconds
+kernel 4 elapsed time: 3677 microseconds
+kernel 5 elapsed time: 234 microseconds
+kernel 6 elapsed time: 431 microseconds
+kernel 7 elapsed time: 663 microseconds
+groupby_agg_partition copy out elapsed time: 6031 microseconds
+groupby_agg_partition copy in elapsed time: 6603 microseconds
+kernel 1 elapsed time: 701 microseconds
+kernel 2 elapsed time: 100 microseconds
+kernel 3 elapsed time: 213 microseconds
+kernel 4 elapsed time: 3663 microseconds
+kernel 5 elapsed time: 232 microseconds
+kernel 6 elapsed time: 431 microseconds
+kernel 7 elapsed time: 658 microseconds
+groupby_agg_partition copy out elapsed time: 6031 microseconds
+groupby_agg_partition copy in elapsed time: 6606 microseconds
+kernel 1 elapsed time: 702 microseconds
+kernel 2 elapsed time: 99 microseconds
+kernel 3 elapsed time: 208 microseconds
+kernel 4 elapsed time: 3680 microseconds
+kernel 5 elapsed time: 228 microseconds
+kernel 6 elapsed time: 431 microseconds
+kernel 7 elapsed time: 677 microseconds
+groupby_agg_partition copy out elapsed time: 6033 microseconds
+groupby_agg_partition copy in elapsed time: 6596 microseconds
+kernel 1 elapsed time: 702 microseconds
+kernel 2 elapsed time: 99 microseconds
+kernel 3 elapsed time: 208 microseconds
+kernel 4 elapsed time: 3670 microseconds
+kernel 5 elapsed time: 232 microseconds
+kernel 6 elapsed time: 432 microseconds
+kernel 7 elapsed time: 666 microseconds
+groupby_agg_partition copy out elapsed time: 6034 microseconds
+groupby_agg_partition copy in elapsed time: 6611 microseconds
+kernel 1 elapsed time: 702 microseconds
+kernel 2 elapsed time: 98 microseconds
+kernel 3 elapsed time: 208 microseconds
+kernel 4 elapsed time: 3659 microseconds
+kernel 5 elapsed time: 225 microseconds
+kernel 6 elapsed time: 432 microseconds
+kernel 7 elapsed time: 656 microseconds
+groupby_agg_partition copy out elapsed time: 6015 microseconds
+groupby_agg_partition copy in elapsed time: 6600 microseconds
+kernel 1 elapsed time: 701 microseconds
+kernel 2 elapsed time: 97 microseconds
+kernel 3 elapsed time: 208 microseconds
+kernel 4 elapsed time: 3673 microseconds
+kernel 5 elapsed time: 224 microseconds
+kernel 6 elapsed time: 431 microseconds
+kernel 7 elapsed time: 659 microseconds
+groupby_agg_partition copy out elapsed time: 6036 microseconds
+groupby_agg_partition copy in elapsed time: 6605 microseconds
+kernel 1 elapsed time: 704 microseconds
+kernel 2 elapsed time: 98 microseconds
+kernel 3 elapsed time: 209 microseconds
+kernel 4 elapsed time: 3655 microseconds
+kernel 5 elapsed time: 232 microseconds
+kernel 6 elapsed time: 431 microseconds
+kernel 7 elapsed time: 672 microseconds
+groupby_agg_partition copy out elapsed time: 6031 microseconds
+groupby_agg_partition copy in elapsed time: 6600 microseconds
+kernel 1 elapsed time: 704 microseconds
+kernel 2 elapsed time: 99 microseconds
+kernel 3 elapsed time: 208 microseconds
+kernel 4 elapsed time: 3706 microseconds
+kernel 5 elapsed time: 233 microseconds
+kernel 6 elapsed time: 432 microseconds
+kernel 7 elapsed time: 658 microseconds
+groupby_agg_partition copy out elapsed time: 5978 microseconds
+groupby_agg_partition copy in elapsed time: 6601 microseconds
+kernel 1 elapsed time: 700 microseconds
+kernel 2 elapsed time: 101 microseconds
+kernel 3 elapsed time: 211 microseconds
+kernel 4 elapsed time: 3663 microseconds
+kernel 5 elapsed time: 232 microseconds
+kernel 6 elapsed time: 432 microseconds
+kernel 7 elapsed time: 659 microseconds
+groupby_agg_partition copy out elapsed time: 5936 microseconds
+groupby_agg_partition copy in elapsed time: 6598 microseconds
+kernel 1 elapsed time: 703 microseconds
+kernel 2 elapsed time: 98 microseconds
+kernel 3 elapsed time: 210 microseconds
+kernel 4 elapsed time: 3693 microseconds
+kernel 5 elapsed time: 232 microseconds
+kernel 6 elapsed time: 432 microseconds
+kernel 7 elapsed time: 666 microseconds
+groupby_agg_partition copy out elapsed time: 5931 microseconds
+groupby_agg_partition copy in elapsed time: 6591 microseconds
+kernel 1 elapsed time: 700 microseconds
+kernel 2 elapsed time: 102 microseconds
+kernel 3 elapsed time: 207 microseconds
+kernel 4 elapsed time: 3684 microseconds
+kernel 5 elapsed time: 229 microseconds
+kernel 6 elapsed time: 432 microseconds
+kernel 7 elapsed time: 660 microseconds
+groupby_agg_partition copy out elapsed time: 5933 microseconds
+groupby_agg_partition copy in elapsed time: 6593 microseconds
+kernel 1 elapsed time: 704 microseconds
+kernel 2 elapsed time: 98 microseconds
+kernel 3 elapsed time: 208 microseconds
+kernel 4 elapsed time: 3651 microseconds
+kernel 5 elapsed time: 231 microseconds
+kernel 6 elapsed time: 432 microseconds
+kernel 7 elapsed time: 671 microseconds
+groupby_agg_partition copy out elapsed time: 5920 microseconds
+groupby_agg_partition copy in elapsed time: 6595 microseconds
+kernel 1 elapsed time: 701 microseconds
+kernel 2 elapsed time: 99 microseconds
+kernel 3 elapsed time: 208 microseconds
+kernel 4 elapsed time: 3676 microseconds
+kernel 5 elapsed time: 230 microseconds
+kernel 6 elapsed time: 431 microseconds
+kernel 7 elapsed time: 658 microseconds
+groupby_agg_partition copy out elapsed time: 5915 microseconds
+groupby_agg_partition copy in elapsed time: 6595 microseconds
+kernel 1 elapsed time: 704 microseconds
+kernel 2 elapsed time: 98 microseconds
+kernel 3 elapsed time: 210 microseconds
+kernel 4 elapsed time: 3666 microseconds
+kernel 5 elapsed time: 226 microseconds
+kernel 6 elapsed time: 432 microseconds
+kernel 7 elapsed time: 653 microseconds
+groupby_agg_partition copy out elapsed time: 5940 microseconds
+groupby_agg_partition copy in elapsed time: 6596 microseconds
+kernel 1 elapsed time: 700 microseconds
+kernel 2 elapsed time: 99 microseconds
+kernel 3 elapsed time: 210 microseconds
+kernel 4 elapsed time: 3661 microseconds
+kernel 5 elapsed time: 232 microseconds
+kernel 6 elapsed time: 430 microseconds
+kernel 7 elapsed time: 660 microseconds
+groupby_agg_partition copy out elapsed time: 5918 microseconds
+groupby_agg_partition copy in elapsed time: 6600 microseconds
+kernel 1 elapsed time: 701 microseconds
+kernel 2 elapsed time: 97 microseconds
+kernel 3 elapsed time: 209 microseconds
+kernel 4 elapsed time: 3673 microseconds
+kernel 5 elapsed time: 232 microseconds
+kernel 6 elapsed time: 431 microseconds
+kernel 7 elapsed time: 666 microseconds
+groupby_agg_partition copy out elapsed time: 5923 microseconds
+groupby_agg_partition copy in elapsed time: 6596 microseconds
+kernel 1 elapsed time: 700 microseconds
+kernel 2 elapsed time: 109 microseconds
+kernel 3 elapsed time: 207 microseconds
+kernel 4 elapsed time: 3651 microseconds
+kernel 5 elapsed time: 240 microseconds
+kernel 6 elapsed time: 430 microseconds
+kernel 7 elapsed time: 663 microseconds
+groupby_agg_partition copy out elapsed time: 5922 microseconds
+groupby_agg_partition copy in elapsed time: 6608 microseconds
+kernel 1 elapsed time: 702 microseconds
+kernel 2 elapsed time: 95 microseconds
+kernel 3 elapsed time: 211 microseconds
+kernel 4 elapsed time: 3664 microseconds
+kernel 5 elapsed time: 225 microseconds
+kernel 6 elapsed time: 431 microseconds
+kernel 7 elapsed time: 646 microseconds
+groupby_agg_partition copy out elapsed time: 5926 microseconds
+groupby_agg_partition copy in elapsed time: 6598 microseconds
+kernel 1 elapsed time: 703 microseconds
+kernel 2 elapsed time: 96 microseconds
+kernel 3 elapsed time: 209 microseconds
+kernel 4 elapsed time: 3659 microseconds
+kernel 5 elapsed time: 225 microseconds
+kernel 6 elapsed time: 431 microseconds
+kernel 7 elapsed time: 652 microseconds
+groupby_agg_partition copy out elapsed time: 5931 microseconds
+groupby_agg_partition copy in elapsed time: 6590 microseconds
+kernel 1 elapsed time: 704 microseconds
+kernel 2 elapsed time: 100 microseconds
+kernel 3 elapsed time: 209 microseconds
+kernel 4 elapsed time: 3675 microseconds
+kernel 5 elapsed time: 234 microseconds
+kernel 6 elapsed time: 432 microseconds
+kernel 7 elapsed time: 648 microseconds
+groupby_agg_partition copy out elapsed time: 5913 microseconds
+groupby_agg_partition copy in elapsed time: 6592 microseconds
+kernel 1 elapsed time: 704 microseconds
+kernel 2 elapsed time: 96 microseconds
+kernel 3 elapsed time: 210 microseconds
+kernel 4 elapsed time: 7065 microseconds
+kernel 5 elapsed time: 247 microseconds
+kernel 6 elapsed time: 431 microseconds
+kernel 7 elapsed time: 654 microseconds
+groupby_agg_partition copy out elapsed time: 5866 microseconds
+groupby_agg_partition copy in elapsed time: 6601 microseconds
+kernel 1 elapsed time: 702 microseconds
+kernel 2 elapsed time: 99 microseconds
+kernel 3 elapsed time: 208 microseconds
+kernel 4 elapsed time: 3687 microseconds
+kernel 5 elapsed time: 227 microseconds
+kernel 6 elapsed time: 430 microseconds
+kernel 7 elapsed time: 662 microseconds
+groupby_agg_partition copy out elapsed time: 5869 microseconds
+groupby_agg_partition copy in elapsed time: 6590 microseconds
+kernel 1 elapsed time: 704 microseconds
+kernel 2 elapsed time: 99 microseconds
+kernel 3 elapsed time: 209 microseconds
+kernel 4 elapsed time: 3669 microseconds
+kernel 5 elapsed time: 232 microseconds
+kernel 6 elapsed time: 431 microseconds
+kernel 7 elapsed time: 666 microseconds
+groupby_agg_partition copy out elapsed time: 5863 microseconds
+groupby_agg_partition copy in elapsed time: 6592 microseconds
+kernel 1 elapsed time: 701 microseconds
+kernel 2 elapsed time: 98 microseconds
+kernel 3 elapsed time: 216 microseconds
+kernel 4 elapsed time: 3660 microseconds
+kernel 5 elapsed time: 227 microseconds
+kernel 6 elapsed time: 431 microseconds
+kernel 7 elapsed time: 659 microseconds
+groupby_agg_partition copy out elapsed time: 5870 microseconds
+groupby_agg_partition copy in elapsed time: 6590 microseconds
+kernel 1 elapsed time: 703 microseconds
+kernel 2 elapsed time: 100 microseconds
+kernel 3 elapsed time: 208 microseconds
+kernel 4 elapsed time: 3659 microseconds
+kernel 5 elapsed time: 232 microseconds
+kernel 6 elapsed time: 430 microseconds
+kernel 7 elapsed time: 681 microseconds
+groupby_agg_partition copy out elapsed time: 5869 microseconds
+groupby_agg_partition copy in elapsed time: 6591 microseconds
+kernel 1 elapsed time: 702 microseconds
+kernel 2 elapsed time: 98 microseconds
+kernel 3 elapsed time: 210 microseconds
+kernel 4 elapsed time: 3691 microseconds
+kernel 5 elapsed time: 227 microseconds
+kernel 6 elapsed time: 431 microseconds
+kernel 7 elapsed time: 658 microseconds
+groupby_agg_partition copy out elapsed time: 5880 microseconds
+groupby_agg_partition copy in elapsed time: 6595 microseconds
+kernel 1 elapsed time: 703 microseconds
+kernel 2 elapsed time: 96 microseconds
+kernel 3 elapsed time: 213 microseconds
+kernel 4 elapsed time: 3671 microseconds
+kernel 5 elapsed time: 229 microseconds
+kernel 6 elapsed time: 431 microseconds
+kernel 7 elapsed time: 670 microseconds
+groupby_agg_partition copy out elapsed time: 5859 microseconds
+groupby_agg_partition copy in elapsed time: 6587 microseconds
+kernel 1 elapsed time: 703 microseconds
+kernel 2 elapsed time: 97 microseconds
+kernel 3 elapsed time: 210 microseconds
+kernel 4 elapsed time: 3669 microseconds
+kernel 5 elapsed time: 225 microseconds
+kernel 6 elapsed time: 430 microseconds
+kernel 7 elapsed time: 661 microseconds
+groupby_agg_partition copy out elapsed time: 5863 microseconds
+groupby_agg_partition copy in elapsed time: 6605 microseconds
+kernel 1 elapsed time: 702 microseconds
+kernel 2 elapsed time: 98 microseconds
+kernel 3 elapsed time: 206 microseconds
+kernel 4 elapsed time: 3683 microseconds
+kernel 5 elapsed time: 231 microseconds
+kernel 6 elapsed time: 431 microseconds
+kernel 7 elapsed time: 663 microseconds
+groupby_agg_partition copy out elapsed time: 5866 microseconds
+groupby_agg_partition copy in elapsed time: 6594 microseconds
+kernel 1 elapsed time: 701 microseconds
+kernel 2 elapsed time: 97 microseconds
+kernel 3 elapsed time: 208 microseconds
+kernel 4 elapsed time: 3673 microseconds
+kernel 5 elapsed time: 227 microseconds
+kernel 6 elapsed time: 430 microseconds
+kernel 7 elapsed time: 662 microseconds
+groupby_agg_partition copy out elapsed time: 5873 microseconds
+groupby_agg_partition copy in elapsed time: 6594 microseconds
+kernel 1 elapsed time: 703 microseconds
+kernel 2 elapsed time: 100 microseconds
+kernel 3 elapsed time: 211 microseconds
+kernel 4 elapsed time: 3670 microseconds
+kernel 5 elapsed time: 226 microseconds
+kernel 6 elapsed time: 432 microseconds
+kernel 7 elapsed time: 658 microseconds
+groupby_agg_partition copy out elapsed time: 5869 microseconds
+groupby_agg_partition copy in elapsed time: 6591 microseconds
+kernel 1 elapsed time: 704 microseconds
+kernel 2 elapsed time: 115 microseconds
+kernel 3 elapsed time: 210 microseconds
+kernel 4 elapsed time: 3665 microseconds
+kernel 5 elapsed time: 229 microseconds
+kernel 6 elapsed time: 431 microseconds
+kernel 7 elapsed time: 653 microseconds
+groupby_agg_partition copy out elapsed time: 5870 microseconds
+groupby_agg_partition copy in elapsed time: 6595 microseconds
+kernel 1 elapsed time: 703 microseconds
+kernel 2 elapsed time: 101 microseconds
+kernel 3 elapsed time: 208 microseconds
+kernel 4 elapsed time: 3674 microseconds
+kernel 5 elapsed time: 227 microseconds
+kernel 6 elapsed time: 432 microseconds
+kernel 7 elapsed time: 667 microseconds
+groupby_agg_partition copy out elapsed time: 5848 microseconds
+groupby_agg_partition copy in elapsed time: 6595 microseconds
+kernel 1 elapsed time: 700 microseconds
+kernel 2 elapsed time: 100 microseconds
+kernel 3 elapsed time: 208 microseconds
+kernel 4 elapsed time: 3653 microseconds
+kernel 5 elapsed time: 227 microseconds
+kernel 6 elapsed time: 431 microseconds
+kernel 7 elapsed time: 663 microseconds
+groupby_agg_partition copy out elapsed time: 5845 microseconds
+groupby_agg_partition copy in elapsed time: 6593 microseconds
+kernel 1 elapsed time: 713 microseconds
+kernel 2 elapsed time: 99 microseconds
+kernel 3 elapsed time: 208 microseconds
+kernel 4 elapsed time: 3656 microseconds
+kernel 5 elapsed time: 231 microseconds
+kernel 6 elapsed time: 432 microseconds
+kernel 7 elapsed time: 657 microseconds
+groupby_agg_partition copy out elapsed time: 5837 microseconds
+groupby_agg_partition copy in elapsed time: 6591 microseconds
+kernel 1 elapsed time: 701 microseconds
+kernel 2 elapsed time: 97 microseconds
+kernel 3 elapsed time: 208 microseconds
+kernel 4 elapsed time: 3664 microseconds
+kernel 5 elapsed time: 233 microseconds
+kernel 6 elapsed time: 432 microseconds
+kernel 7 elapsed time: 665 microseconds
+groupby_agg_partition copy out elapsed time: 5834 microseconds
+groupby_agg_partition copy in elapsed time: 6601 microseconds
+kernel 1 elapsed time: 703 microseconds
+kernel 2 elapsed time: 98 microseconds
+kernel 3 elapsed time: 212 microseconds
+kernel 4 elapsed time: 3653 microseconds
+kernel 5 elapsed time: 227 microseconds
+kernel 6 elapsed time: 431 microseconds
+kernel 7 elapsed time: 654 microseconds
+groupby_agg_partition copy out elapsed time: 5838 microseconds
+groupby_agg_partition copy in elapsed time: 6591 microseconds
+kernel 1 elapsed time: 701 microseconds
+kernel 2 elapsed time: 99 microseconds
+kernel 3 elapsed time: 209 microseconds
+kernel 4 elapsed time: 3650 microseconds
+kernel 5 elapsed time: 233 microseconds
+kernel 6 elapsed time: 431 microseconds
+kernel 7 elapsed time: 653 microseconds
+groupby_agg_partition copy out elapsed time: 5850 microseconds
+groupby_agg_partition copy in elapsed time: 6594 microseconds
+kernel 1 elapsed time: 702 microseconds
+kernel 2 elapsed time: 97 microseconds
+kernel 3 elapsed time: 211 microseconds
+kernel 4 elapsed time: 3661 microseconds
+kernel 5 elapsed time: 233 microseconds
+kernel 6 elapsed time: 432 microseconds
+kernel 7 elapsed time: 649 microseconds
+groupby_agg_partition copy out elapsed time: 5848 microseconds
+groupby_agg_partition copy in elapsed time: 6588 microseconds
+kernel 1 elapsed time: 702 microseconds
+kernel 2 elapsed time: 98 microseconds
+kernel 3 elapsed time: 207 microseconds
+kernel 4 elapsed time: 3721 microseconds
+kernel 5 elapsed time: 226 microseconds
+kernel 6 elapsed time: 431 microseconds
+kernel 7 elapsed time: 659 microseconds
+groupby_agg_partition copy out elapsed time: 5845 microseconds
+groupby_agg_partition copy in elapsed time: 6588 microseconds
+kernel 1 elapsed time: 700 microseconds
+kernel 2 elapsed time: 99 microseconds
+kernel 3 elapsed time: 209 microseconds
+kernel 4 elapsed time: 3647 microseconds
+kernel 5 elapsed time: 236 microseconds
+kernel 6 elapsed time: 431 microseconds
+kernel 7 elapsed time: 658 microseconds
+groupby_agg_partition copy out elapsed time: 5849 microseconds
+groupby_agg_partition copy in elapsed time: 6589 microseconds
+kernel 1 elapsed time: 703 microseconds
+kernel 2 elapsed time: 99 microseconds
+kernel 3 elapsed time: 214 microseconds
+kernel 4 elapsed time: 3673 microseconds
+kernel 5 elapsed time: 232 microseconds
+kernel 6 elapsed time: 432 microseconds
+kernel 7 elapsed time: 665 microseconds
+groupby_agg_partition copy out elapsed time: 5848 microseconds
+groupby_agg_partition copy in elapsed time: 6590 microseconds
+kernel 1 elapsed time: 701 microseconds
+kernel 2 elapsed time: 99 microseconds
+kernel 3 elapsed time: 207 microseconds
+kernel 4 elapsed time: 3681 microseconds
+kernel 5 elapsed time: 232 microseconds
+kernel 6 elapsed time: 430 microseconds
+kernel 7 elapsed time: 664 microseconds
+groupby_agg_partition copy out elapsed time: 5839 microseconds
+groupby_agg_partition copy in elapsed time: 6587 microseconds
+kernel 1 elapsed time: 702 microseconds
+kernel 2 elapsed time: 98 microseconds
+kernel 3 elapsed time: 208 microseconds
+kernel 4 elapsed time: 3667 microseconds
+kernel 5 elapsed time: 234 microseconds
+kernel 6 elapsed time: 438 microseconds
+kernel 7 elapsed time: 664 microseconds
+groupby_agg_partition copy out elapsed time: 5833 microseconds
+groupby_agg_partition copy in elapsed time: 6596 microseconds
+kernel 1 elapsed time: 706 microseconds
+kernel 2 elapsed time: 100 microseconds
+kernel 3 elapsed time: 210 microseconds
+kernel 4 elapsed time: 3690 microseconds
+kernel 5 elapsed time: 231 microseconds
+kernel 6 elapsed time: 431 microseconds
+kernel 7 elapsed time: 677 microseconds
+groupby_agg_partition copy out elapsed time: 5823 microseconds
+groupby_agg_partition copy in elapsed time: 6588 microseconds
+kernel 1 elapsed time: 702 microseconds
+kernel 2 elapsed time: 97 microseconds
+kernel 3 elapsed time: 208 microseconds
+kernel 4 elapsed time: 3657 microseconds
+kernel 5 elapsed time: 226 microseconds
+kernel 6 elapsed time: 431 microseconds
+kernel 7 elapsed time: 664 microseconds
+groupby_agg_partition copy out elapsed time: 5828 microseconds
+groupby_agg_partition copy in elapsed time: 6595 microseconds
+kernel 1 elapsed time: 703 microseconds
+kernel 2 elapsed time: 97 microseconds
+kernel 3 elapsed time: 208 microseconds
+kernel 4 elapsed time: 3680 microseconds
+kernel 5 elapsed time: 225 microseconds
+kernel 6 elapsed time: 431 microseconds
+kernel 7 elapsed time: 644 microseconds
+groupby_agg_partition copy out elapsed time: 5831 microseconds
+groupby_agg_partition copy in elapsed time: 6590 microseconds
+kernel 1 elapsed time: 702 microseconds
+kernel 2 elapsed time: 100 microseconds
+kernel 3 elapsed time: 206 microseconds
+kernel 4 elapsed time: 3674 microseconds
+kernel 5 elapsed time: 225 microseconds
+kernel 6 elapsed time: 431 microseconds
+kernel 7 elapsed time: 663 microseconds
+groupby_agg_partition copy out elapsed time: 5825 microseconds
+groupby_agg_partition copy in elapsed time: 6592 microseconds
+kernel 1 elapsed time: 702 microseconds
+kernel 2 elapsed time: 98 microseconds
+kernel 3 elapsed time: 209 microseconds
+kernel 4 elapsed time: 3699 microseconds
+kernel 5 elapsed time: 230 microseconds
+kernel 6 elapsed time: 430 microseconds
+kernel 7 elapsed time: 662 microseconds
+groupby_agg_partition copy out elapsed time: 5820 microseconds
+groupby_agg_partition copy in elapsed time: 6590 microseconds
+kernel 1 elapsed time: 700 microseconds
+kernel 2 elapsed time: 98 microseconds
+kernel 3 elapsed time: 210 microseconds
+kernel 4 elapsed time: 3671 microseconds
+kernel 5 elapsed time: 231 microseconds
+kernel 6 elapsed time: 432 microseconds
+kernel 7 elapsed time: 665 microseconds
+groupby_agg_partition copy out elapsed time: 5837 microseconds
+groupby_agg_partition copy in elapsed time: 6601 microseconds
+kernel 1 elapsed time: 701 microseconds
+kernel 2 elapsed time: 97 microseconds
+kernel 3 elapsed time: 209 microseconds
+kernel 4 elapsed time: 3659 microseconds
+kernel 5 elapsed time: 228 microseconds
+kernel 6 elapsed time: 431 microseconds
+kernel 7 elapsed time: 663 microseconds
+groupby_agg_partition copy out elapsed time: 5836 microseconds
+groupby_agg_partition copy in elapsed time: 6596 microseconds
+kernel 1 elapsed time: 704 microseconds
+kernel 2 elapsed time: 99 microseconds
+kernel 3 elapsed time: 208 microseconds
+kernel 4 elapsed time: 3665 microseconds
+kernel 5 elapsed time: 232 microseconds
+kernel 6 elapsed time: 431 microseconds
+kernel 7 elapsed time: 675 microseconds
+groupby_agg_partition copy out elapsed time: 5845 microseconds
+groupby_agg_partition copy in elapsed time: 6593 microseconds
+kernel 1 elapsed time: 702 microseconds
+kernel 2 elapsed time: 99 microseconds
+kernel 3 elapsed time: 209 microseconds
+kernel 4 elapsed time: 3678 microseconds
+kernel 5 elapsed time: 232 microseconds
+kernel 6 elapsed time: 431 microseconds
+kernel 7 elapsed time: 679 microseconds
+groupby_agg_partition copy out elapsed time: 5823 microseconds
+groupby_agg_partition copy in elapsed time: 6595 microseconds
+kernel 1 elapsed time: 701 microseconds
+kernel 2 elapsed time: 98 microseconds
+kernel 3 elapsed time: 211 microseconds
+kernel 4 elapsed time: 3665 microseconds
+kernel 5 elapsed time: 226 microseconds
+kernel 6 elapsed time: 431 microseconds
+kernel 7 elapsed time: 659 microseconds
+groupby_agg_partition copy out elapsed time: 5836 microseconds
+groupby_agg_partition copy in elapsed time: 6600 microseconds
+kernel 1 elapsed time: 699 microseconds
+kernel 2 elapsed time: 99 microseconds
+kernel 3 elapsed time: 208 microseconds
+kernel 4 elapsed time: 3657 microseconds
+kernel 5 elapsed time: 227 microseconds
+kernel 6 elapsed time: 431 microseconds
+kernel 7 elapsed time: 672 microseconds
+groupby_agg_partition copy out elapsed time: 5833 microseconds
+groupby_agg_partition copy in elapsed time: 6592 microseconds
+kernel 1 elapsed time: 703 microseconds
+kernel 2 elapsed time: 101 microseconds
+kernel 3 elapsed time: 208 microseconds
+kernel 4 elapsed time: 3661 microseconds
+kernel 5 elapsed time: 225 microseconds
+kernel 6 elapsed time: 432 microseconds
+kernel 7 elapsed time: 674 microseconds
+groupby_agg_partition copy out elapsed time: 5826 microseconds
+groupby_agg_partition copy in elapsed time: 6602 microseconds
+kernel 1 elapsed time: 701 microseconds
+kernel 2 elapsed time: 99 microseconds
+kernel 3 elapsed time: 210 microseconds
+kernel 4 elapsed time: 3668 microseconds
+kernel 5 elapsed time: 225 microseconds
+kernel 6 elapsed time: 431 microseconds
+kernel 7 elapsed time: 650 microseconds
+groupby_agg_partition copy out elapsed time: 5827 microseconds
+groupby_agg_partition copy in elapsed time: 6593 microseconds
+kernel 1 elapsed time: 703 microseconds
+kernel 2 elapsed time: 96 microseconds
+kernel 3 elapsed time: 207 microseconds
+kernel 4 elapsed time: 3659 microseconds
+kernel 5 elapsed time: 233 microseconds
+kernel 6 elapsed time: 431 microseconds
+kernel 7 elapsed time: 658 microseconds
+groupby_agg_partition copy out elapsed time: 5808 microseconds
+groupby_agg_partition copy in elapsed time: 6597 microseconds
+kernel 1 elapsed time: 702 microseconds
+kernel 2 elapsed time: 97 microseconds
+kernel 3 elapsed time: 207 microseconds
+kernel 4 elapsed time: 3654 microseconds
+kernel 5 elapsed time: 233 microseconds
+kernel 6 elapsed time: 431 microseconds
+kernel 7 elapsed time: 670 microseconds
+groupby_agg_partition copy out elapsed time: 5815 microseconds
+groupby_agg_partition copy in elapsed time: 6591 microseconds
+kernel 1 elapsed time: 700 microseconds
+kernel 2 elapsed time: 97 microseconds
+kernel 3 elapsed time: 209 microseconds
+kernel 4 elapsed time: 3662 microseconds
+kernel 5 elapsed time: 233 microseconds
+kernel 6 elapsed time: 431 microseconds
+kernel 7 elapsed time: 646 microseconds
+groupby_agg_partition copy out elapsed time: 5808 microseconds
+groupby_agg_partition copy in elapsed time: 6594 microseconds
+kernel 1 elapsed time: 702 microseconds
+kernel 2 elapsed time: 99 microseconds
+kernel 3 elapsed time: 208 microseconds
+kernel 4 elapsed time: 3665 microseconds
+kernel 5 elapsed time: 231 microseconds
+kernel 6 elapsed time: 431 microseconds
+kernel 7 elapsed time: 671 microseconds
+groupby_agg_partition copy out elapsed time: 5808 microseconds
+groupby_agg_partition copy in elapsed time: 6591 microseconds
+kernel 1 elapsed time: 706 microseconds
+kernel 2 elapsed time: 100 microseconds
+kernel 3 elapsed time: 210 microseconds
+kernel 4 elapsed time: 3677 microseconds
+kernel 5 elapsed time: 234 microseconds
+kernel 6 elapsed time: 430 microseconds
+kernel 7 elapsed time: 667 microseconds
+groupby_agg_partition copy out elapsed time: 5815 microseconds
+groupby_agg_partition copy in elapsed time: 6589 microseconds
+kernel 1 elapsed time: 702 microseconds
+kernel 2 elapsed time: 98 microseconds
+kernel 3 elapsed time: 209 microseconds
+kernel 4 elapsed time: 3657 microseconds
+kernel 5 elapsed time: 234 microseconds
+kernel 6 elapsed time: 431 microseconds
+kernel 7 elapsed time: 667 microseconds
+groupby_agg_partition copy out elapsed time: 5809 microseconds
+groupby_agg_partition copy in elapsed time: 6596 microseconds
+kernel 1 elapsed time: 703 microseconds
+kernel 2 elapsed time: 95 microseconds
+kernel 3 elapsed time: 208 microseconds
+kernel 4 elapsed time: 3667 microseconds
+kernel 5 elapsed time: 226 microseconds
+kernel 6 elapsed time: 431 microseconds
+kernel 7 elapsed time: 668 microseconds
+groupby_agg_partition copy out elapsed time: 5818 microseconds
+groupby_agg_partition copy in elapsed time: 6592 microseconds
+kernel 1 elapsed time: 701 microseconds
+kernel 2 elapsed time: 98 microseconds
+kernel 3 elapsed time: 210 microseconds
+kernel 4 elapsed time: 3658 microseconds
+kernel 5 elapsed time: 232 microseconds
+kernel 6 elapsed time: 431 microseconds
+kernel 7 elapsed time: 675 microseconds
+groupby_agg_partition copy out elapsed time: 5815 microseconds
+groupby_agg_partition copy in elapsed time: 6588 microseconds
+kernel 1 elapsed time: 704 microseconds
+kernel 2 elapsed time: 101 microseconds
+kernel 3 elapsed time: 207 microseconds
+kernel 4 elapsed time: 3713 microseconds
+kernel 5 elapsed time: 232 microseconds
+kernel 6 elapsed time: 431 microseconds
+kernel 7 elapsed time: 678 microseconds
+groupby_agg_partition copy out elapsed time: 5816 microseconds
+groupby_agg_partition copy in elapsed time: 6588 microseconds
+kernel 1 elapsed time: 703 microseconds
+kernel 2 elapsed time: 97 microseconds
+kernel 3 elapsed time: 223 microseconds
+kernel 4 elapsed time: 3680 microseconds
+kernel 5 elapsed time: 225 microseconds
+kernel 6 elapsed time: 431 microseconds
+kernel 7 elapsed time: 656 microseconds
+groupby_agg_partition copy out elapsed time: 5821 microseconds
+groupby_agg_partition copy in elapsed time: 6587 microseconds
+kernel 1 elapsed time: 702 microseconds
+kernel 2 elapsed time: 101 microseconds
+kernel 3 elapsed time: 209 microseconds
+kernel 4 elapsed time: 3657 microseconds
+kernel 5 elapsed time: 231 microseconds
+kernel 6 elapsed time: 431 microseconds
+kernel 7 elapsed time: 672 microseconds
+groupby_agg_partition copy out elapsed time: 5826 microseconds
+groupby_agg_partition copy in elapsed time: 6588 microseconds
+kernel 1 elapsed time: 701 microseconds
+kernel 2 elapsed time: 97 microseconds
+kernel 3 elapsed time: 208 microseconds
+kernel 4 elapsed time: 3665 microseconds
+kernel 5 elapsed time: 236 microseconds
+kernel 6 elapsed time: 432 microseconds
+kernel 7 elapsed time: 662 microseconds
+groupby_agg_partition copy out elapsed time: 5840 microseconds
+groupby_agg_partition copy in elapsed time: 6593 microseconds
+kernel 1 elapsed time: 701 microseconds
+kernel 2 elapsed time: 98 microseconds
+kernel 3 elapsed time: 212 microseconds
+kernel 4 elapsed time: 3656 microseconds
+kernel 5 elapsed time: 228 microseconds
+kernel 6 elapsed time: 432 microseconds
+kernel 7 elapsed time: 667 microseconds
+groupby_agg_partition copy out elapsed time: 5828 microseconds
+groupby_agg_partition copy in elapsed time: 6605 microseconds
+kernel 1 elapsed time: 702 microseconds
+kernel 2 elapsed time: 97 microseconds
+kernel 3 elapsed time: 209 microseconds
+kernel 4 elapsed time: 3666 microseconds
+kernel 5 elapsed time: 234 microseconds
+kernel 6 elapsed time: 431 microseconds
+kernel 7 elapsed time: 653 microseconds
+groupby_agg_partition copy out elapsed time: 5834 microseconds
+groupby_agg_partition copy in elapsed time: 6596 microseconds
+kernel 1 elapsed time: 703 microseconds
+kernel 2 elapsed time: 102 microseconds
+kernel 3 elapsed time: 208 microseconds
+kernel 4 elapsed time: 3680 microseconds
+kernel 5 elapsed time: 232 microseconds
+kernel 6 elapsed time: 431 microseconds
+kernel 7 elapsed time: 650 microseconds
+groupby_agg_partition copy out elapsed time: 5822 microseconds
+groupby_agg_partition copy in elapsed time: 6594 microseconds
+kernel 1 elapsed time: 717 microseconds
+kernel 2 elapsed time: 99 microseconds
+kernel 3 elapsed time: 212 microseconds
+kernel 4 elapsed time: 3654 microseconds
+kernel 5 elapsed time: 238 microseconds
+kernel 6 elapsed time: 431 microseconds
+kernel 7 elapsed time: 652 microseconds
+groupby_agg_partition copy out elapsed time: 5817 microseconds
+groupby_agg_partition copy in elapsed time: 6588 microseconds
+kernel 1 elapsed time: 703 microseconds
+kernel 2 elapsed time: 98 microseconds
+kernel 3 elapsed time: 208 microseconds
+kernel 4 elapsed time: 3657 microseconds
+kernel 5 elapsed time: 234 microseconds
+kernel 6 elapsed time: 432 microseconds
+kernel 7 elapsed time: 679 microseconds
+groupby_agg_partition copy out elapsed time: 5818 microseconds
+groupby_agg_partition copy in elapsed time: 6592 microseconds
+kernel 1 elapsed time: 701 microseconds
+kernel 2 elapsed time: 100 microseconds
+kernel 3 elapsed time: 210 microseconds
+kernel 4 elapsed time: 3662 microseconds
+kernel 5 elapsed time: 232 microseconds
+kernel 6 elapsed time: 430 microseconds
+kernel 7 elapsed time: 677 microseconds
+groupby_agg_partition copy out elapsed time: 5821 microseconds
+groupby_agg_partition copy in elapsed time: 6587 microseconds
+kernel 1 elapsed time: 703 microseconds
+kernel 2 elapsed time: 97 microseconds
+kernel 3 elapsed time: 211 microseconds
+kernel 4 elapsed time: 3672 microseconds
+kernel 5 elapsed time: 225 microseconds
+kernel 6 elapsed time: 432 microseconds
+kernel 7 elapsed time: 675 microseconds
+groupby_agg_partition copy out elapsed time: 5816 microseconds
+groupby_agg_partition copy in elapsed time: 6608 microseconds
+kernel 1 elapsed time: 704 microseconds
+kernel 2 elapsed time: 101 microseconds
+kernel 3 elapsed time: 208 microseconds
+kernel 4 elapsed time: 3660 microseconds
+kernel 5 elapsed time: 229 microseconds
+kernel 6 elapsed time: 430 microseconds
+kernel 7 elapsed time: 672 microseconds
+groupby_agg_partition copy out elapsed time: 5827 microseconds
+groupby_agg_partition copy in elapsed time: 6589 microseconds
+kernel 1 elapsed time: 701 microseconds
+kernel 2 elapsed time: 99 microseconds
+kernel 3 elapsed time: 208 microseconds
+kernel 4 elapsed time: 3680 microseconds
+kernel 5 elapsed time: 229 microseconds
+kernel 6 elapsed time: 431 microseconds
+kernel 7 elapsed time: 655 microseconds
+groupby_agg_partition copy out elapsed time: 5821 microseconds
+groupby_agg_partition copy in elapsed time: 6588 microseconds
+kernel 1 elapsed time: 707 microseconds
+kernel 2 elapsed time: 99 microseconds
+kernel 3 elapsed time: 209 microseconds
+kernel 4 elapsed time: 3654 microseconds
+kernel 5 elapsed time: 225 microseconds
+kernel 6 elapsed time: 430 microseconds
+kernel 7 elapsed time: 679 microseconds
+groupby_agg_partition copy out elapsed time: 5816 microseconds
+groupby_agg_partition copy in elapsed time: 6595 microseconds
+kernel 1 elapsed time: 701 microseconds
+kernel 2 elapsed time: 96 microseconds
+kernel 3 elapsed time: 207 microseconds
+kernel 4 elapsed time: 3678 microseconds
+kernel 5 elapsed time: 237 microseconds
+kernel 6 elapsed time: 431 microseconds
+kernel 7 elapsed time: 657 microseconds
+groupby_agg_partition copy out elapsed time: 5830 microseconds
+par_result_in_continous_mem elapsed time: 6982 microseconds
+pop2device elapsed time: 2165 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 852 microseconds
+device_reduce_kernel elapsed time: 38 microseconds
+collect_kv_in_ht elapsed time: 232 microseconds
+copy result to host elapsed time: 233 microseconds
+par_result_in_continous_mem elapsed time: 5268 microseconds
+pop2device elapsed time: 2104 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 814 microseconds
+device_reduce_kernel elapsed time: 21 microseconds
+collect_kv_in_ht elapsed time: 210 microseconds
+copy result to host elapsed time: 222 microseconds
+par_result_in_continous_mem elapsed time: 5414 microseconds
+pop2device elapsed time: 2124 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 788 microseconds
+device_reduce_kernel elapsed time: 19 microseconds
+collect_kv_in_ht elapsed time: 201 microseconds
+copy result to host elapsed time: 234 microseconds
+par_result_in_continous_mem elapsed time: 5343 microseconds
+pop2device elapsed time: 2121 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 789 microseconds
+device_reduce_kernel elapsed time: 18 microseconds
+collect_kv_in_ht elapsed time: 194 microseconds
+copy result to host elapsed time: 220 microseconds
+par_result_in_continous_mem elapsed time: 5318 microseconds
+pop2device elapsed time: 2155 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 791 microseconds
+device_reduce_kernel elapsed time: 18 microseconds
+collect_kv_in_ht elapsed time: 196 microseconds
+copy result to host elapsed time: 221 microseconds
+par_result_in_continous_mem elapsed time: 5456 microseconds
+pop2device elapsed time: 2099 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 791 microseconds
+device_reduce_kernel elapsed time: 26 microseconds
+collect_kv_in_ht elapsed time: 199 microseconds
+copy result to host elapsed time: 220 microseconds
+par_result_in_continous_mem elapsed time: 5399 microseconds
+pop2device elapsed time: 2087 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 785 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 195 microseconds
+copy result to host elapsed time: 220 microseconds
+par_result_in_continous_mem elapsed time: 5357 microseconds
+pop2device elapsed time: 2092 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 790 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 198 microseconds
+copy result to host elapsed time: 220 microseconds
+par_result_in_continous_mem elapsed time: 5309 microseconds
+pop2device elapsed time: 2090 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 788 microseconds
+device_reduce_kernel elapsed time: 26 microseconds
+collect_kv_in_ht elapsed time: 195 microseconds
+copy result to host elapsed time: 220 microseconds
+par_result_in_continous_mem elapsed time: 5277 microseconds
+pop2device elapsed time: 2121 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 791 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 195 microseconds
+copy result to host elapsed time: 240 microseconds
+par_result_in_continous_mem elapsed time: 5425 microseconds
+pop2device elapsed time: 2089 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 786 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 197 microseconds
+copy result to host elapsed time: 219 microseconds
+par_result_in_continous_mem elapsed time: 5340 microseconds
+pop2device elapsed time: 2105 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 787 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 194 microseconds
+copy result to host elapsed time: 227 microseconds
+par_result_in_continous_mem elapsed time: 5366 microseconds
+pop2device elapsed time: 2114 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 788 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 198 microseconds
+copy result to host elapsed time: 219 microseconds
+par_result_in_continous_mem elapsed time: 5300 microseconds
+pop2device elapsed time: 2091 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 791 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 201 microseconds
+copy result to host elapsed time: 218 microseconds
+par_result_in_continous_mem elapsed time: 5064 microseconds
+pop2device elapsed time: 2125 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 787 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 202 microseconds
+copy result to host elapsed time: 220 microseconds
+par_result_in_continous_mem elapsed time: 5359 microseconds
+pop2device elapsed time: 2107 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 789 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 198 microseconds
+copy result to host elapsed time: 221 microseconds
+par_result_in_continous_mem elapsed time: 5315 microseconds
+pop2device elapsed time: 2099 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 787 microseconds
+device_reduce_kernel elapsed time: 23 microseconds
+collect_kv_in_ht elapsed time: 194 microseconds
+copy result to host elapsed time: 219 microseconds
+par_result_in_continous_mem elapsed time: 5416 microseconds
+pop2device elapsed time: 2094 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 789 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 194 microseconds
+copy result to host elapsed time: 220 microseconds
+par_result_in_continous_mem elapsed time: 5334 microseconds
+pop2device elapsed time: 2101 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 788 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 196 microseconds
+copy result to host elapsed time: 219 microseconds
+par_result_in_continous_mem elapsed time: 5335 microseconds
+pop2device elapsed time: 2121 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 791 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 196 microseconds
+copy result to host elapsed time: 222 microseconds
+par_result_in_continous_mem elapsed time: 5335 microseconds
+pop2device elapsed time: 2111 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 787 microseconds
+device_reduce_kernel elapsed time: 23 microseconds
+collect_kv_in_ht elapsed time: 195 microseconds
+copy result to host elapsed time: 220 microseconds
+par_result_in_continous_mem elapsed time: 5352 microseconds
+pop2device elapsed time: 2126 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 788 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 193 microseconds
+copy result to host elapsed time: 222 microseconds
+par_result_in_continous_mem elapsed time: 5337 microseconds
+pop2device elapsed time: 2109 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 786 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 194 microseconds
+copy result to host elapsed time: 219 microseconds
+par_result_in_continous_mem elapsed time: 5339 microseconds
+pop2device elapsed time: 2101 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 786 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 198 microseconds
+copy result to host elapsed time: 221 microseconds
+par_result_in_continous_mem elapsed time: 5384 microseconds
+pop2device elapsed time: 2108 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 787 microseconds
+device_reduce_kernel elapsed time: 29 microseconds
+collect_kv_in_ht elapsed time: 193 microseconds
+copy result to host elapsed time: 235 microseconds
+par_result_in_continous_mem elapsed time: 5361 microseconds
+pop2device elapsed time: 2126 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 787 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 199 microseconds
+copy result to host elapsed time: 221 microseconds
+par_result_in_continous_mem elapsed time: 5360 microseconds
+pop2device elapsed time: 2136 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 787 microseconds
+device_reduce_kernel elapsed time: 23 microseconds
+collect_kv_in_ht elapsed time: 197 microseconds
+copy result to host elapsed time: 222 microseconds
+par_result_in_continous_mem elapsed time: 5378 microseconds
+pop2device elapsed time: 2106 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 787 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 203 microseconds
+copy result to host elapsed time: 235 microseconds
+par_result_in_continous_mem elapsed time: 5346 microseconds
+pop2device elapsed time: 2104 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 787 microseconds
+device_reduce_kernel elapsed time: 26 microseconds
+collect_kv_in_ht elapsed time: 203 microseconds
+copy result to host elapsed time: 220 microseconds
+par_result_in_continous_mem elapsed time: 5390 microseconds
+pop2device elapsed time: 2132 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 790 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 195 microseconds
+copy result to host elapsed time: 220 microseconds
+par_result_in_continous_mem elapsed time: 5262 microseconds
+pop2device elapsed time: 2105 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 786 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 193 microseconds
+copy result to host elapsed time: 220 microseconds
+par_result_in_continous_mem elapsed time: 5305 microseconds
+pop2device elapsed time: 2095 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 787 microseconds
+device_reduce_kernel elapsed time: 23 microseconds
+collect_kv_in_ht elapsed time: 193 microseconds
+copy result to host elapsed time: 220 microseconds
+par_result_in_continous_mem elapsed time: 5284 microseconds
+pop2device elapsed time: 2116 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 790 microseconds
+device_reduce_kernel elapsed time: 26 microseconds
+collect_kv_in_ht elapsed time: 195 microseconds
+copy result to host elapsed time: 219 microseconds
+par_result_in_continous_mem elapsed time: 5380 microseconds
+pop2device elapsed time: 2115 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 786 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 195 microseconds
+copy result to host elapsed time: 221 microseconds
+par_result_in_continous_mem elapsed time: 5354 microseconds
+pop2device elapsed time: 2103 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 785 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 194 microseconds
+copy result to host elapsed time: 219 microseconds
+par_result_in_continous_mem elapsed time: 5371 microseconds
+pop2device elapsed time: 2105 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 789 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 198 microseconds
+copy result to host elapsed time: 221 microseconds
+par_result_in_continous_mem elapsed time: 5240 microseconds
+pop2device elapsed time: 2079 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 790 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 197 microseconds
+copy result to host elapsed time: 220 microseconds
+par_result_in_continous_mem elapsed time: 5372 microseconds
+pop2device elapsed time: 2111 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 787 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 195 microseconds
+copy result to host elapsed time: 220 microseconds
+par_result_in_continous_mem elapsed time: 5315 microseconds
+pop2device elapsed time: 2123 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 788 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 194 microseconds
+copy result to host elapsed time: 220 microseconds
+par_result_in_continous_mem elapsed time: 5296 microseconds
+pop2device elapsed time: 2094 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 792 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 199 microseconds
+copy result to host elapsed time: 220 microseconds
+par_result_in_continous_mem elapsed time: 5278 microseconds
+pop2device elapsed time: 2086 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 788 microseconds
+device_reduce_kernel elapsed time: 27 microseconds
+collect_kv_in_ht elapsed time: 197 microseconds
+copy result to host elapsed time: 221 microseconds
+par_result_in_continous_mem elapsed time: 5346 microseconds
+pop2device elapsed time: 2101 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 787 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 202 microseconds
+copy result to host elapsed time: 221 microseconds
+par_result_in_continous_mem elapsed time: 5384 microseconds
+pop2device elapsed time: 2105 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 788 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 197 microseconds
+copy result to host elapsed time: 222 microseconds
+par_result_in_continous_mem elapsed time: 5358 microseconds
+pop2device elapsed time: 2099 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 791 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 196 microseconds
+copy result to host elapsed time: 221 microseconds
+par_result_in_continous_mem elapsed time: 5343 microseconds
+pop2device elapsed time: 2085 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 789 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 194 microseconds
+copy result to host elapsed time: 222 microseconds
+par_result_in_continous_mem elapsed time: 5296 microseconds
+pop2device elapsed time: 2098 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 787 microseconds
+device_reduce_kernel elapsed time: 23 microseconds
+collect_kv_in_ht elapsed time: 196 microseconds
+copy result to host elapsed time: 221 microseconds
+par_result_in_continous_mem elapsed time: 5390 microseconds
+pop2device elapsed time: 2103 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 791 microseconds
+device_reduce_kernel elapsed time: 26 microseconds
+collect_kv_in_ht elapsed time: 193 microseconds
+copy result to host elapsed time: 233 microseconds
+par_result_in_continous_mem elapsed time: 5330 microseconds
+pop2device elapsed time: 2104 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 786 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 196 microseconds
+copy result to host elapsed time: 219 microseconds
+par_result_in_continous_mem elapsed time: 5335 microseconds
+pop2device elapsed time: 2124 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 791 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 195 microseconds
+copy result to host elapsed time: 219 microseconds
+par_result_in_continous_mem elapsed time: 5330 microseconds
+pop2device elapsed time: 2124 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 789 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 193 microseconds
+copy result to host elapsed time: 219 microseconds
+par_result_in_continous_mem elapsed time: 5374 microseconds
+pop2device elapsed time: 2103 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 789 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 194 microseconds
+copy result to host elapsed time: 219 microseconds
+par_result_in_continous_mem elapsed time: 5396 microseconds
+pop2device elapsed time: 2138 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 787 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 197 microseconds
+copy result to host elapsed time: 232 microseconds
+par_result_in_continous_mem elapsed time: 5369 microseconds
+pop2device elapsed time: 2125 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 791 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 202 microseconds
+copy result to host elapsed time: 226 microseconds
+par_result_in_continous_mem elapsed time: 5014 microseconds
+pop2device elapsed time: 2119 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 789 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 216 microseconds
+copy result to host elapsed time: 220 microseconds
+par_result_in_continous_mem elapsed time: 5379 microseconds
+pop2device elapsed time: 2104 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 787 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 197 microseconds
+copy result to host elapsed time: 221 microseconds
+par_result_in_continous_mem elapsed time: 5319 microseconds
+pop2device elapsed time: 2150 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 791 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 196 microseconds
+copy result to host elapsed time: 239 microseconds
+par_result_in_continous_mem elapsed time: 5324 microseconds
+pop2device elapsed time: 2097 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 788 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 195 microseconds
+copy result to host elapsed time: 222 microseconds
+par_result_in_continous_mem elapsed time: 5386 microseconds
+pop2device elapsed time: 2103 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 788 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 195 microseconds
+copy result to host elapsed time: 221 microseconds
+par_result_in_continous_mem elapsed time: 5383 microseconds
+pop2device elapsed time: 2118 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 787 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 195 microseconds
+copy result to host elapsed time: 221 microseconds
+par_result_in_continous_mem elapsed time: 5339 microseconds
+pop2device elapsed time: 2106 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 787 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 193 microseconds
+copy result to host elapsed time: 232 microseconds
+par_result_in_continous_mem elapsed time: 5327 microseconds
+pop2device elapsed time: 2107 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 791 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 194 microseconds
+copy result to host elapsed time: 233 microseconds
+par_result_in_continous_mem elapsed time: 5440 microseconds
+pop2device elapsed time: 2128 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 789 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 194 microseconds
+copy result to host elapsed time: 228 microseconds
+par_result_in_continous_mem elapsed time: 5402 microseconds
+pop2device elapsed time: 2137 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 790 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 196 microseconds
+copy result to host elapsed time: 222 microseconds
+par_result_in_continous_mem elapsed time: 5398 microseconds
+pop2device elapsed time: 2120 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 791 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 198 microseconds
+copy result to host elapsed time: 221 microseconds
+par_result_in_continous_mem elapsed time: 5363 microseconds
+pop2device elapsed time: 2157 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 788 microseconds
+device_reduce_kernel elapsed time: 23 microseconds
+collect_kv_in_ht elapsed time: 202 microseconds
+copy result to host elapsed time: 219 microseconds
+par_result_in_continous_mem elapsed time: 5335 microseconds
+pop2device elapsed time: 2114 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 788 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 203 microseconds
+copy result to host elapsed time: 232 microseconds
+par_result_in_continous_mem elapsed time: 5356 microseconds
+pop2device elapsed time: 2102 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 803 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 195 microseconds
+copy result to host elapsed time: 219 microseconds
+par_result_in_continous_mem elapsed time: 5419 microseconds
+pop2device elapsed time: 2126 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 788 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 194 microseconds
+copy result to host elapsed time: 220 microseconds
+par_result_in_continous_mem elapsed time: 5367 microseconds
+pop2device elapsed time: 2095 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 791 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 195 microseconds
+copy result to host elapsed time: 219 microseconds
+par_result_in_continous_mem elapsed time: 5314 microseconds
+pop2device elapsed time: 2093 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 792 microseconds
+device_reduce_kernel elapsed time: 23 microseconds
+collect_kv_in_ht elapsed time: 195 microseconds
+copy result to host elapsed time: 219 microseconds
+par_result_in_continous_mem elapsed time: 5326 microseconds
+pop2device elapsed time: 2108 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 790 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 195 microseconds
+copy result to host elapsed time: 218 microseconds
+par_result_in_continous_mem elapsed time: 5401 microseconds
+pop2device elapsed time: 2143 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 788 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 194 microseconds
+copy result to host elapsed time: 220 microseconds
+par_result_in_continous_mem elapsed time: 5327 microseconds
+pop2device elapsed time: 2097 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 787 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 197 microseconds
+copy result to host elapsed time: 221 microseconds
+par_result_in_continous_mem elapsed time: 5316 microseconds
+pop2device elapsed time: 2099 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 791 microseconds
+device_reduce_kernel elapsed time: 22 microseconds
+collect_kv_in_ht elapsed time: 195 microseconds
+copy result to host elapsed time: 221 microseconds
+par_result_in_continous_mem elapsed time: 5406 microseconds
+pop2device elapsed time: 2089 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 791 microseconds
+device_reduce_kernel elapsed time: 26 microseconds
+collect_kv_in_ht elapsed time: 196 microseconds
+copy result to host elapsed time: 220 microseconds
+par_result_in_continous_mem elapsed time: 5327 microseconds
+pop2device elapsed time: 2092 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 788 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 197 microseconds
+copy result to host elapsed time: 220 microseconds
+par_result_in_continous_mem elapsed time: 5298 microseconds
+pop2device elapsed time: 2109 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 788 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 199 microseconds
+copy result to host elapsed time: 221 microseconds
+par_result_in_continous_mem elapsed time: 5320 microseconds
+pop2device elapsed time: 2092 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 788 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 203 microseconds
+copy result to host elapsed time: 221 microseconds
+par_result_in_continous_mem elapsed time: 5355 microseconds
+pop2device elapsed time: 2093 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 788 microseconds
+device_reduce_kernel elapsed time: 23 microseconds
+collect_kv_in_ht elapsed time: 198 microseconds
+copy result to host elapsed time: 222 microseconds
+par_result_in_continous_mem elapsed time: 5344 microseconds
+pop2device elapsed time: 2092 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 788 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 194 microseconds
+copy result to host elapsed time: 222 microseconds
+par_result_in_continous_mem elapsed time: 5360 microseconds
+pop2device elapsed time: 2103 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 788 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 194 microseconds
+copy result to host elapsed time: 222 microseconds
+par_result_in_continous_mem elapsed time: 5360 microseconds
+pop2device elapsed time: 2098 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 791 microseconds
+device_reduce_kernel elapsed time: 26 microseconds
+collect_kv_in_ht elapsed time: 194 microseconds
+copy result to host elapsed time: 221 microseconds
+par_result_in_continous_mem elapsed time: 5277 microseconds
+pop2device elapsed time: 2083 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 790 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 195 microseconds
+copy result to host elapsed time: 220 microseconds
+par_result_in_continous_mem elapsed time: 5390 microseconds
+pop2device elapsed time: 2085 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 788 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 195 microseconds
+copy result to host elapsed time: 220 microseconds
+par_result_in_continous_mem elapsed time: 5314 microseconds
+pop2device elapsed time: 2091 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 793 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 197 microseconds
+copy result to host elapsed time: 220 microseconds
+par_result_in_continous_mem elapsed time: 5342 microseconds
+pop2device elapsed time: 2119 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 792 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 192 microseconds
+copy result to host elapsed time: 227 microseconds
+par_result_in_continous_mem elapsed time: 5385 microseconds
+pop2device elapsed time: 2127 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 788 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 194 microseconds
+copy result to host elapsed time: 221 microseconds
+par_result_in_continous_mem elapsed time: 5394 microseconds
+pop2device elapsed time: 2124 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 790 microseconds
+device_reduce_kernel elapsed time: 35 microseconds
+collect_kv_in_ht elapsed time: 201 microseconds
+copy result to host elapsed time: 219 microseconds
+par_result_in_continous_mem elapsed time: 5345 microseconds
+pop2device elapsed time: 2101 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 790 microseconds
+device_reduce_kernel elapsed time: 26 microseconds
+collect_kv_in_ht elapsed time: 201 microseconds
+copy result to host elapsed time: 219 microseconds
+par_result_in_continous_mem elapsed time: 5341 microseconds
+pop2device elapsed time: 2119 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 789 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 205 microseconds
+copy result to host elapsed time: 220 microseconds
+par_result_in_continous_mem elapsed time: 5308 microseconds
+pop2device elapsed time: 2108 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 790 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 192 microseconds
+copy result to host elapsed time: 221 microseconds
+par_result_in_continous_mem elapsed time: 5284 microseconds
+pop2device elapsed time: 2098 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 788 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 195 microseconds
+copy result to host elapsed time: 221 microseconds
+par_result_in_continous_mem elapsed time: 5321 microseconds
+pop2device elapsed time: 2132 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 789 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 194 microseconds
+copy result to host elapsed time: 229 microseconds
+par_result_in_continous_mem elapsed time: 5298 microseconds
+pop2device elapsed time: 2097 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 787 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 195 microseconds
+copy result to host elapsed time: 222 microseconds
+par_result_in_continous_mem elapsed time: 5394 microseconds
+pop2device elapsed time: 2123 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 792 microseconds
+device_reduce_kernel elapsed time: 26 microseconds
+collect_kv_in_ht elapsed time: 196 microseconds
+copy result to host elapsed time: 221 microseconds
+par_result_in_continous_mem elapsed time: 5348 microseconds
+pop2device elapsed time: 2126 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 791 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 196 microseconds
+copy result to host elapsed time: 221 microseconds
+par_result_in_continous_mem elapsed time: 5327 microseconds
+pop2device elapsed time: 2145 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 789 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 192 microseconds
+copy result to host elapsed time: 220 microseconds
+par_result_in_continous_mem elapsed time: 5382 microseconds
+pop2device elapsed time: 2124 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 788 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 194 microseconds
+copy result to host elapsed time: 227 microseconds
+par_result_in_continous_mem elapsed time: 5387 microseconds
+pop2device elapsed time: 2125 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 790 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 195 microseconds
+copy result to host elapsed time: 235 microseconds
+par_result_in_continous_mem elapsed time: 5360 microseconds
+pop2device elapsed time: 2107 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 789 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 200 microseconds
+copy result to host elapsed time: 220 microseconds
+par_result_in_continous_mem elapsed time: 5349 microseconds
+pop2device elapsed time: 2113 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 793 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 198 microseconds
+copy result to host elapsed time: 248 microseconds
+par_result_in_continous_mem elapsed time: 5382 microseconds
+pop2device elapsed time: 2112 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 789 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 204 microseconds
+copy result to host elapsed time: 221 microseconds
+par_result_in_continous_mem elapsed time: 5324 microseconds
+pop2device elapsed time: 2139 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 789 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 198 microseconds
+copy result to host elapsed time: 220 microseconds
+par_result_in_continous_mem elapsed time: 5364 microseconds
+pop2device elapsed time: 2121 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 790 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 196 microseconds
+copy result to host elapsed time: 220 microseconds
+par_result_in_continous_mem elapsed time: 5383 microseconds
+pop2device elapsed time: 2106 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 788 microseconds
+device_reduce_kernel elapsed time: 23 microseconds
+collect_kv_in_ht elapsed time: 211 microseconds
+copy result to host elapsed time: 220 microseconds
+par_result_in_continous_mem elapsed time: 5320 microseconds
+pop2device elapsed time: 2118 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 788 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 194 microseconds
+copy result to host elapsed time: 219 microseconds
+par_result_in_continous_mem elapsed time: 5304 microseconds
+pop2device elapsed time: 2107 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 788 microseconds
+device_reduce_kernel elapsed time: 23 microseconds
+collect_kv_in_ht elapsed time: 195 microseconds
+copy result to host elapsed time: 236 microseconds
+par_result_in_continous_mem elapsed time: 5314 microseconds
+pop2device elapsed time: 2097 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 790 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 193 microseconds
+copy result to host elapsed time: 221 microseconds
+par_result_in_continous_mem elapsed time: 4847 microseconds
+pop2device elapsed time: 2093 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 788 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 197 microseconds
+copy result to host elapsed time: 221 microseconds
+par_result_in_continous_mem elapsed time: 5281 microseconds
+pop2device elapsed time: 2092 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 788 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 196 microseconds
+copy result to host elapsed time: 221 microseconds
+par_result_in_continous_mem elapsed time: 5287 microseconds
+pop2device elapsed time: 2110 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 792 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 197 microseconds
+copy result to host elapsed time: 223 microseconds
+par_result_in_continous_mem elapsed time: 5293 microseconds
+pop2device elapsed time: 2103 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 788 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 198 microseconds
+copy result to host elapsed time: 222 microseconds
+par_result_in_continous_mem elapsed time: 5318 microseconds
+pop2device elapsed time: 2119 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 789 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 201 microseconds
+copy result to host elapsed time: 223 microseconds
+par_result_in_continous_mem elapsed time: 5394 microseconds
+pop2device elapsed time: 2116 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 796 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 201 microseconds
+copy result to host elapsed time: 222 microseconds
+par_result_in_continous_mem elapsed time: 5288 microseconds
+pop2device elapsed time: 2098 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 787 microseconds
+device_reduce_kernel elapsed time: 26 microseconds
+collect_kv_in_ht elapsed time: 196 microseconds
+copy result to host elapsed time: 222 microseconds
+par_result_in_continous_mem elapsed time: 5246 microseconds
+pop2device elapsed time: 2096 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 794 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 195 microseconds
+copy result to host elapsed time: 223 microseconds
+par_result_in_continous_mem elapsed time: 5296 microseconds
+pop2device elapsed time: 2094 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 789 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 195 microseconds
+copy result to host elapsed time: 219 microseconds
+par_result_in_continous_mem elapsed time: 5251 microseconds
+pop2device elapsed time: 2107 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 790 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 213 microseconds
+copy result to host elapsed time: 220 microseconds
+par_result_in_continous_mem elapsed time: 5397 microseconds
+pop2device elapsed time: 2133 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 790 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 197 microseconds
+copy result to host elapsed time: 220 microseconds
+par_result_in_continous_mem elapsed time: 5408 microseconds
+pop2device elapsed time: 2099 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 789 microseconds
+device_reduce_kernel elapsed time: 23 microseconds
+collect_kv_in_ht elapsed time: 193 microseconds
+copy result to host elapsed time: 220 microseconds
+par_result_in_continous_mem elapsed time: 5376 microseconds
+pop2device elapsed time: 2099 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 789 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 194 microseconds
+copy result to host elapsed time: 219 microseconds
+par_result_in_continous_mem elapsed time: 5244 microseconds
+pop2device elapsed time: 2099 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 788 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 195 microseconds
+copy result to host elapsed time: 219 microseconds
+par_result_in_continous_mem elapsed time: 5288 microseconds
+pop2device elapsed time: 2099 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 789 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 194 microseconds
+copy result to host elapsed time: 219 microseconds
+par_result_in_continous_mem elapsed time: 5322 microseconds
+pop2device elapsed time: 2093 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 792 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 205 microseconds
+copy result to host elapsed time: 220 microseconds
+par_result_in_continous_mem elapsed time: 5332 microseconds
+pop2device elapsed time: 2099 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 790 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 203 microseconds
+copy result to host elapsed time: 222 microseconds
+par_result_in_continous_mem elapsed time: 5306 microseconds
+pop2device elapsed time: 2130 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 789 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 201 microseconds
+copy result to host elapsed time: 221 microseconds
+par_result_in_continous_mem elapsed time: 5291 microseconds
+pop2device elapsed time: 2089 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 789 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 194 microseconds
+copy result to host elapsed time: 221 microseconds
+par_result_in_continous_mem elapsed time: 5293 microseconds
+pop2device elapsed time: 2094 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 789 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 194 microseconds
+copy result to host elapsed time: 222 microseconds
+par_result_in_continous_mem elapsed time: 5282 microseconds
+pop2device elapsed time: 2132 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 792 microseconds
+device_reduce_kernel elapsed time: 23 microseconds
+collect_kv_in_ht elapsed time: 193 microseconds
+copy result to host elapsed time: 227 microseconds
+par_result_in_continous_mem elapsed time: 5330 microseconds
+pop2device elapsed time: 2109 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 791 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 194 microseconds
+copy result to host elapsed time: 234 microseconds
+par_result_in_continous_mem elapsed time: 5329 microseconds
+pop2device elapsed time: 2114 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 791 microseconds
+device_reduce_kernel elapsed time: 27 microseconds
+collect_kv_in_ht elapsed time: 197 microseconds
+copy result to host elapsed time: 221 microseconds
+par_result_in_continous_mem elapsed time: 5317 microseconds
+pop2device elapsed time: 2100 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 791 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 192 microseconds
+copy result to host elapsed time: 225 microseconds
+par_result_in_continous_mem elapsed time: 5400 microseconds
+pop2device elapsed time: 2089 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 793 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 195 microseconds
+copy result to host elapsed time: 220 microseconds
+par_result_in_continous_mem elapsed time: 5376 microseconds
+pop2device elapsed time: 2120 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 791 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 195 microseconds
+copy result to host elapsed time: 221 microseconds
+par_result_in_continous_mem elapsed time: 5379 microseconds
+pop2device elapsed time: 2108 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 789 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 197 microseconds
+copy result to host elapsed time: 229 microseconds
+par_result_in_continous_mem elapsed time: 5457 microseconds
+pop2device elapsed time: 2119 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 793 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 199 microseconds
+copy result to host elapsed time: 232 microseconds
+par_result_in_continous_mem elapsed time: 5294 microseconds
+pop2device elapsed time: 2124 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 787 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 199 microseconds
+copy result to host elapsed time: 231 microseconds
+par_result_in_continous_mem elapsed time: 5319 microseconds
+pop2device elapsed time: 2099 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 790 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 197 microseconds
+copy result to host elapsed time: 219 microseconds
+par_result_in_continous_mem elapsed time: 5406 microseconds
+pop2device elapsed time: 2114 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 790 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 194 microseconds
+copy result to host elapsed time: 220 microseconds
+par_result_in_continous_mem elapsed time: 5363 microseconds
+pop2device elapsed time: 2132 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 789 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 195 microseconds
+copy result to host elapsed time: 220 microseconds
+par_result_in_continous_mem elapsed time: 5390 microseconds
+pop2device elapsed time: 2125 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 792 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 196 microseconds
+copy result to host elapsed time: 227 microseconds
+par_result_in_continous_mem elapsed time: 5332 microseconds
+pop2device elapsed time: 2135 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 788 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 195 microseconds
+copy result to host elapsed time: 221 microseconds
+par_result_in_continous_mem elapsed time: 5381 microseconds
+pop2device elapsed time: 2101 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 789 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 193 microseconds
+copy result to host elapsed time: 220 microseconds
+par_result_in_continous_mem elapsed time: 5414 microseconds
+pop2device elapsed time: 2119 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 793 microseconds
+device_reduce_kernel elapsed time: 34 microseconds
+collect_kv_in_ht elapsed time: 194 microseconds
+copy result to host elapsed time: 233 microseconds
+par_result_in_continous_mem elapsed time: 5358 microseconds
+pop2device elapsed time: 2107 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 790 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 194 microseconds
+copy result to host elapsed time: 220 microseconds
+par_result_in_continous_mem elapsed time: 5429 microseconds
+pop2device elapsed time: 2114 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 790 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 198 microseconds
+copy result to host elapsed time: 234 microseconds
+par_result_in_continous_mem elapsed time: 5376 microseconds
+pop2device elapsed time: 2099 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 790 microseconds
+device_reduce_kernel elapsed time: 22 microseconds
+collect_kv_in_ht elapsed time: 206 microseconds
+copy result to host elapsed time: 220 microseconds
+par_result_in_continous_mem elapsed time: 5340 microseconds
+pop2device elapsed time: 2120 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 791 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 203 microseconds
+copy result to host elapsed time: 222 microseconds
+par_result_in_continous_mem elapsed time: 5348 microseconds
+pop2device elapsed time: 2101 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 793 microseconds
+device_reduce_kernel elapsed time: 23 microseconds
+collect_kv_in_ht elapsed time: 195 microseconds
+copy result to host elapsed time: 221 microseconds
+par_result_in_continous_mem elapsed time: 5357 microseconds
+pop2device elapsed time: 2099 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 794 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 198 microseconds
+copy result to host elapsed time: 221 microseconds
+par_result_in_continous_mem elapsed time: 5394 microseconds
+pop2device elapsed time: 2083 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 791 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 193 microseconds
+copy result to host elapsed time: 221 microseconds
+par_result_in_continous_mem elapsed time: 5351 microseconds
+pop2device elapsed time: 2095 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 792 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 194 microseconds
+copy result to host elapsed time: 221 microseconds
+par_result_in_continous_mem elapsed time: 5372 microseconds
+pop2device elapsed time: 2097 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 789 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 193 microseconds
+copy result to host elapsed time: 220 microseconds
+par_result_in_continous_mem elapsed time: 5342 microseconds
+pop2device elapsed time: 2100 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 789 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 196 microseconds
+copy result to host elapsed time: 221 microseconds
+par_result_in_continous_mem elapsed time: 5380 microseconds
+pop2device elapsed time: 2099 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 789 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 197 microseconds
+copy result to host elapsed time: 221 microseconds
+par_result_in_continous_mem elapsed time: 5363 microseconds
+pop2device elapsed time: 2101 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 790 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 193 microseconds
+copy result to host elapsed time: 220 microseconds
+par_result_in_continous_mem elapsed time: 5393 microseconds
+pop2device elapsed time: 2118 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 789 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 192 microseconds
+copy result to host elapsed time: 223 microseconds
+par_result_in_continous_mem elapsed time: 5371 microseconds
+pop2device elapsed time: 2103 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 789 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 197 microseconds
+copy result to host elapsed time: 223 microseconds
+par_result_in_continous_mem elapsed time: 5373 microseconds
+pop2device elapsed time: 2095 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 791 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 199 microseconds
+copy result to host elapsed time: 221 microseconds
+par_result_in_continous_mem elapsed time: 5406 microseconds
+pop2device elapsed time: 2104 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 789 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 201 microseconds
+copy result to host elapsed time: 221 microseconds
+par_result_in_continous_mem elapsed time: 5326 microseconds
+pop2device elapsed time: 2097 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 791 microseconds
+device_reduce_kernel elapsed time: 23 microseconds
+collect_kv_in_ht elapsed time: 214 microseconds
+copy result to host elapsed time: 221 microseconds
+par_result_in_continous_mem elapsed time: 5423 microseconds
+pop2device elapsed time: 2095 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 790 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 193 microseconds
+copy result to host elapsed time: 222 microseconds
+par_result_in_continous_mem elapsed time: 5361 microseconds
+pop2device elapsed time: 2100 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 789 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 195 microseconds
+copy result to host elapsed time: 223 microseconds
+par_result_in_continous_mem elapsed time: 5416 microseconds
+pop2device elapsed time: 2126 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 798 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 196 microseconds
+copy result to host elapsed time: 221 microseconds
+par_result_in_continous_mem elapsed time: 5420 microseconds
+pop2device elapsed time: 2132 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 788 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 197 microseconds
+copy result to host elapsed time: 221 microseconds
+par_result_in_continous_mem elapsed time: 5423 microseconds
+pop2device elapsed time: 2122 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 792 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 196 microseconds
+copy result to host elapsed time: 234 microseconds
+par_result_in_continous_mem elapsed time: 5404 microseconds
+pop2device elapsed time: 2103 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 790 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 194 microseconds
+copy result to host elapsed time: 220 microseconds
+par_result_in_continous_mem elapsed time: 5432 microseconds
+pop2device elapsed time: 2129 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 787 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 191 microseconds
+copy result to host elapsed time: 219 microseconds
+par_result_in_continous_mem elapsed time: 5438 microseconds
+pop2device elapsed time: 2099 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 793 microseconds
+device_reduce_kernel elapsed time: 26 microseconds
+collect_kv_in_ht elapsed time: 198 microseconds
+copy result to host elapsed time: 219 microseconds
+par_result_in_continous_mem elapsed time: 5396 microseconds
+pop2device elapsed time: 2120 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 789 microseconds
+device_reduce_kernel elapsed time: 26 microseconds
+collect_kv_in_ht elapsed time: 199 microseconds
+copy result to host elapsed time: 222 microseconds
+par_result_in_continous_mem elapsed time: 5450 microseconds
+pop2device elapsed time: 2096 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 790 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 197 microseconds
+copy result to host elapsed time: 228 microseconds
+par_result_in_continous_mem elapsed time: 5402 microseconds
+pop2device elapsed time: 2120 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 791 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 199 microseconds
+copy result to host elapsed time: 224 microseconds
+par_result_in_continous_mem elapsed time: 5360 microseconds
+pop2device elapsed time: 2095 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 793 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 194 microseconds
+copy result to host elapsed time: 222 microseconds
+par_result_in_continous_mem elapsed time: 5393 microseconds
+pop2device elapsed time: 2115 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 789 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 191 microseconds
+copy result to host elapsed time: 222 microseconds
+par_result_in_continous_mem elapsed time: 5360 microseconds
+pop2device elapsed time: 2121 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 791 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 194 microseconds
+copy result to host elapsed time: 221 microseconds
+par_result_in_continous_mem elapsed time: 5343 microseconds
+pop2device elapsed time: 2100 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 789 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 195 microseconds
+copy result to host elapsed time: 221 microseconds
+par_result_in_continous_mem elapsed time: 5339 microseconds
+pop2device elapsed time: 2114 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 791 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 191 microseconds
+copy result to host elapsed time: 222 microseconds
+par_result_in_continous_mem elapsed time: 5396 microseconds
+pop2device elapsed time: 2104 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 789 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 193 microseconds
+copy result to host elapsed time: 222 microseconds
+par_result_in_continous_mem elapsed time: 5330 microseconds
+pop2device elapsed time: 2136 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 790 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 195 microseconds
+copy result to host elapsed time: 221 microseconds
+par_result_in_continous_mem elapsed time: 5347 microseconds
+pop2device elapsed time: 2125 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 803 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 197 microseconds
+copy result to host elapsed time: 220 microseconds
+par_result_in_continous_mem elapsed time: 5485 microseconds
+pop2device elapsed time: 2119 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 794 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 198 microseconds
+copy result to host elapsed time: 228 microseconds
+par_result_in_continous_mem elapsed time: 5329 microseconds
+pop2device elapsed time: 2132 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 787 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 202 microseconds
+copy result to host elapsed time: 220 microseconds
+par_result_in_continous_mem elapsed time: 5377 microseconds
+pop2device elapsed time: 2135 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 791 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 207 microseconds
+copy result to host elapsed time: 219 microseconds
+par_result_in_continous_mem elapsed time: 5377 microseconds
+pop2device elapsed time: 2134 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 791 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 193 microseconds
+copy result to host elapsed time: 233 microseconds
+par_result_in_continous_mem elapsed time: 5340 microseconds
+pop2device elapsed time: 2115 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 791 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 192 microseconds
+copy result to host elapsed time: 221 microseconds
+par_result_in_continous_mem elapsed time: 5319 microseconds
+pop2device elapsed time: 2110 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 789 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 196 microseconds
+copy result to host elapsed time: 222 microseconds
+par_result_in_continous_mem elapsed time: 5422 microseconds
+pop2device elapsed time: 2116 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 792 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 196 microseconds
+copy result to host elapsed time: 220 microseconds
+par_result_in_continous_mem elapsed time: 5371 microseconds
+pop2device elapsed time: 2118 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 793 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 198 microseconds
+copy result to host elapsed time: 222 microseconds
+par_result_in_continous_mem elapsed time: 5381 microseconds
+pop2device elapsed time: 2112 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 791 microseconds
+device_reduce_kernel elapsed time: 40 microseconds
+collect_kv_in_ht elapsed time: 196 microseconds
+copy result to host elapsed time: 222 microseconds
+par_result_in_continous_mem elapsed time: 5379 microseconds
+pop2device elapsed time: 2126 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 792 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 195 microseconds
+copy result to host elapsed time: 220 microseconds
+par_result_in_continous_mem elapsed time: 5394 microseconds
+pop2device elapsed time: 2117 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 792 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 198 microseconds
+copy result to host elapsed time: 221 microseconds
+par_result_in_continous_mem elapsed time: 5351 microseconds
+pop2device elapsed time: 2098 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 790 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 201 microseconds
+copy result to host elapsed time: 222 microseconds
+par_result_in_continous_mem elapsed time: 5367 microseconds
+pop2device elapsed time: 2102 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 790 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 200 microseconds
+copy result to host elapsed time: 224 microseconds
+par_result_in_continous_mem elapsed time: 5367 microseconds
+pop2device elapsed time: 2108 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 788 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 199 microseconds
+copy result to host elapsed time: 233 microseconds
+par_result_in_continous_mem elapsed time: 5479 microseconds
+pop2device elapsed time: 2085 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 793 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 194 microseconds
+copy result to host elapsed time: 220 microseconds
+par_result_in_continous_mem elapsed time: 5286 microseconds
+pop2device elapsed time: 2102 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 791 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 198 microseconds
+copy result to host elapsed time: 219 microseconds
+par_result_in_continous_mem elapsed time: 5353 microseconds
+pop2device elapsed time: 2121 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 791 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 195 microseconds
+copy result to host elapsed time: 220 microseconds
+par_result_in_continous_mem elapsed time: 5468 microseconds
+pop2device elapsed time: 2122 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 795 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 197 microseconds
+copy result to host elapsed time: 221 microseconds
+par_result_in_continous_mem elapsed time: 5385 microseconds
+pop2device elapsed time: 2105 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 789 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 194 microseconds
+copy result to host elapsed time: 220 microseconds
+par_result_in_continous_mem elapsed time: 5324 microseconds
+pop2device elapsed time: 2109 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 792 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 196 microseconds
+copy result to host elapsed time: 220 microseconds
+par_result_in_continous_mem elapsed time: 5349 microseconds
+pop2device elapsed time: 2102 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 791 microseconds
+device_reduce_kernel elapsed time: 26 microseconds
+collect_kv_in_ht elapsed time: 195 microseconds
+copy result to host elapsed time: 221 microseconds
+par_result_in_continous_mem elapsed time: 5387 microseconds
+pop2device elapsed time: 2117 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 793 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 198 microseconds
+copy result to host elapsed time: 229 microseconds
+par_result_in_continous_mem elapsed time: 5360 microseconds
+pop2device elapsed time: 2103 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 792 microseconds
+device_reduce_kernel elapsed time: 23 microseconds
+collect_kv_in_ht elapsed time: 199 microseconds
+copy result to host elapsed time: 234 microseconds
+par_result_in_continous_mem elapsed time: 5387 microseconds
+pop2device elapsed time: 2130 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 792 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 200 microseconds
+copy result to host elapsed time: 221 microseconds
+par_result_in_continous_mem elapsed time: 5280 microseconds
+pop2device elapsed time: 2100 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 795 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 197 microseconds
+copy result to host elapsed time: 221 microseconds
+par_result_in_continous_mem elapsed time: 5415 microseconds
+pop2device elapsed time: 2123 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 790 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 195 microseconds
+copy result to host elapsed time: 222 microseconds
+par_result_in_continous_mem elapsed time: 5337 microseconds
+pop2device elapsed time: 2126 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 791 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 195 microseconds
+copy result to host elapsed time: 222 microseconds
+par_result_in_continous_mem elapsed time: 5345 microseconds
+pop2device elapsed time: 2121 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 792 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 194 microseconds
+copy result to host elapsed time: 220 microseconds
+par_result_in_continous_mem elapsed time: 5342 microseconds
+pop2device elapsed time: 2097 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 790 microseconds
+device_reduce_kernel elapsed time: 23 microseconds
+collect_kv_in_ht elapsed time: 193 microseconds
+copy result to host elapsed time: 219 microseconds
+par_result_in_continous_mem elapsed time: 5506 microseconds
+pop2device elapsed time: 2114 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 795 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 198 microseconds
+copy result to host elapsed time: 220 microseconds
+par_result_in_continous_mem elapsed time: 5346 microseconds
+pop2device elapsed time: 2129 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 790 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 195 microseconds
+copy result to host elapsed time: 221 microseconds
+par_result_in_continous_mem elapsed time: 5358 microseconds
+pop2device elapsed time: 2118 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 789 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 194 microseconds
+copy result to host elapsed time: 220 microseconds
+par_result_in_continous_mem elapsed time: 5447 microseconds
+pop2device elapsed time: 2118 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 792 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 198 microseconds
+copy result to host elapsed time: 227 microseconds
+par_result_in_continous_mem elapsed time: 5391 microseconds
+pop2device elapsed time: 2120 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 792 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 199 microseconds
+copy result to host elapsed time: 220 microseconds
+par_result_in_continous_mem elapsed time: 5396 microseconds
+pop2device elapsed time: 2114 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 801 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 198 microseconds
+copy result to host elapsed time: 220 microseconds
+par_result_in_continous_mem elapsed time: 5367 microseconds
+pop2device elapsed time: 2116 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 807 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 197 microseconds
+copy result to host elapsed time: 227 microseconds
+par_result_in_continous_mem elapsed time: 5447 microseconds
+pop2device elapsed time: 2126 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 798 microseconds
+device_reduce_kernel elapsed time: 41 microseconds
+collect_kv_in_ht elapsed time: 197 microseconds
+copy result to host elapsed time: 221 microseconds
+par_result_in_continous_mem elapsed time: 5460 microseconds
+pop2device elapsed time: 2143 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 792 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 197 microseconds
+copy result to host elapsed time: 228 microseconds
+par_result_in_continous_mem elapsed time: 5367 microseconds
+pop2device elapsed time: 2123 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 793 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 196 microseconds
+copy result to host elapsed time: 222 microseconds
+par_result_in_continous_mem elapsed time: 5387 microseconds
+pop2device elapsed time: 2122 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 792 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 193 microseconds
+copy result to host elapsed time: 230 microseconds
+par_result_in_continous_mem elapsed time: 5427 microseconds
+pop2device elapsed time: 2128 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 792 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 193 microseconds
+copy result to host elapsed time: 223 microseconds
+par_result_in_continous_mem elapsed time: 5394 microseconds
+pop2device elapsed time: 2107 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 792 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 196 microseconds
+copy result to host elapsed time: 223 microseconds
+par_result_in_continous_mem elapsed time: 5346 microseconds
+pop2device elapsed time: 2111 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 790 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 199 microseconds
+copy result to host elapsed time: 234 microseconds
+par_result_in_continous_mem elapsed time: 5410 microseconds
+pop2device elapsed time: 2098 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 790 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 200 microseconds
+copy result to host elapsed time: 220 microseconds
+par_result_in_continous_mem elapsed time: 5384 microseconds
+pop2device elapsed time: 2104 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 790 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 199 microseconds
+copy result to host elapsed time: 232 microseconds
+par_result_in_continous_mem elapsed time: 5468 microseconds
+pop2device elapsed time: 2110 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 790 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 197 microseconds
+copy result to host elapsed time: 220 microseconds
+par_result_in_continous_mem elapsed time: 5400 microseconds
+pop2device elapsed time: 2118 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 789 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 200 microseconds
+copy result to host elapsed time: 220 microseconds
+par_result_in_continous_mem elapsed time: 5405 microseconds
+pop2device elapsed time: 2107 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 791 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 194 microseconds
+copy result to host elapsed time: 221 microseconds
+par_result_in_continous_mem elapsed time: 5439 microseconds
+pop2device elapsed time: 2131 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 790 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 194 microseconds
+copy result to host elapsed time: 221 microseconds
+par_result_in_continous_mem elapsed time: 5406 microseconds
+pop2device elapsed time: 2102 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 794 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 195 microseconds
+copy result to host elapsed time: 221 microseconds
+par_result_in_continous_mem elapsed time: 5364 microseconds
+pop2device elapsed time: 2098 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 796 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 196 microseconds
+copy result to host elapsed time: 223 microseconds
+par_result_in_continous_mem elapsed time: 5305 microseconds
+pop2device elapsed time: 2103 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 793 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 195 microseconds
+copy result to host elapsed time: 222 microseconds
+par_result_in_continous_mem elapsed time: 5507 microseconds
+pop2device elapsed time: 2110 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 791 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 193 microseconds
+copy result to host elapsed time: 223 microseconds
+par_result_in_continous_mem elapsed time: 5378 microseconds
+pop2device elapsed time: 2103 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 791 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 196 microseconds
+copy result to host elapsed time: 222 microseconds
+par_result_in_continous_mem elapsed time: 5360 microseconds
+pop2device elapsed time: 2099 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 793 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 201 microseconds
+copy result to host elapsed time: 222 microseconds
+par_result_in_continous_mem elapsed time: 5321 microseconds
+pop2device elapsed time: 2112 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 789 microseconds
+device_reduce_kernel elapsed time: 23 microseconds
+collect_kv_in_ht elapsed time: 206 microseconds
+copy result to host elapsed time: 221 microseconds
+par_result_in_continous_mem elapsed time: 5341 microseconds
+pop2device elapsed time: 2126 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 791 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 199 microseconds
+copy result to host elapsed time: 222 microseconds
+par_result_in_continous_mem elapsed time: 5272 microseconds
+pop2device elapsed time: 2131 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 794 microseconds
+device_reduce_kernel elapsed time: 26 microseconds
+collect_kv_in_ht elapsed time: 197 microseconds
+copy result to host elapsed time: 221 microseconds
+par_result_in_continous_mem elapsed time: 5332 microseconds
+pop2device elapsed time: 2110 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 794 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 195 microseconds
+copy result to host elapsed time: 219 microseconds
+par_result_in_continous_mem elapsed time: 5352 microseconds
+pop2device elapsed time: 2120 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 792 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 198 microseconds
+copy result to host elapsed time: 227 microseconds
+par_result_in_continous_mem elapsed time: 5333 microseconds
+pop2device elapsed time: 2105 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 792 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 196 microseconds
+copy result to host elapsed time: 219 microseconds
+par_result_in_continous_mem elapsed time: 5370 microseconds
+pop2device elapsed time: 2126 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 789 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 196 microseconds
+copy result to host elapsed time: 220 microseconds
+par_result_in_continous_mem elapsed time: 5433 microseconds
+pop2device elapsed time: 2114 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 791 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 194 microseconds
+copy result to host elapsed time: 223 microseconds
+par_result_in_continous_mem elapsed time: 5420 microseconds
+pop2device elapsed time: 2110 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 792 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 204 microseconds
+copy result to host elapsed time: 221 microseconds
+par_result_in_continous_mem elapsed time: 5365 microseconds
+pop2device elapsed time: 2131 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 794 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 205 microseconds
+copy result to host elapsed time: 223 microseconds
+par_result_in_continous_mem elapsed time: 5370 microseconds
+pop2device elapsed time: 2108 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 792 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 207 microseconds
+copy result to host elapsed time: 222 microseconds
+par_result_in_continous_mem elapsed time: 5423 microseconds
+pop2device elapsed time: 2134 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 797 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 194 microseconds
+copy result to host elapsed time: 235 microseconds
+par_result_in_continous_mem elapsed time: 5393 microseconds
+pop2device elapsed time: 2097 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 792 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 196 microseconds
+copy result to host elapsed time: 231 microseconds
+par_result_in_continous_mem elapsed time: 5379 microseconds
+pop2device elapsed time: 2107 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 792 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 195 microseconds
+copy result to host elapsed time: 221 microseconds
+par_result_in_continous_mem elapsed time: 5373 microseconds
+pop2device elapsed time: 2103 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 790 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 194 microseconds
+copy result to host elapsed time: 220 microseconds
+par_result_in_continous_mem elapsed time: 5376 microseconds
+pop2device elapsed time: 2092 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 792 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 194 microseconds
+copy result to host elapsed time: 220 microseconds
+par_result_in_continous_mem elapsed time: 5351 microseconds
+pop2device elapsed time: 2103 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 791 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 193 microseconds
+copy result to host elapsed time: 220 microseconds
+par_result_in_continous_mem elapsed time: 5461 microseconds
+pop2device elapsed time: 2088 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 793 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 197 microseconds
+copy result to host elapsed time: 219 microseconds
+par_result_in_continous_mem elapsed time: 5342 microseconds
+pop2device elapsed time: 2116 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 791 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 195 microseconds
+copy result to host elapsed time: 227 microseconds
+par_result_in_continous_mem elapsed time: 5319 microseconds
+pop2device elapsed time: 2098 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 790 microseconds
+device_reduce_kernel elapsed time: 26 microseconds
+collect_kv_in_ht elapsed time: 197 microseconds
+copy result to host elapsed time: 222 microseconds
+par_result_in_continous_mem elapsed time: 5437 microseconds
+pop2device elapsed time: 2104 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 794 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 200 microseconds
+copy result to host elapsed time: 223 microseconds
+par_result_in_continous_mem elapsed time: 5370 microseconds
+pop2device elapsed time: 2113 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 794 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 201 microseconds
+copy result to host elapsed time: 221 microseconds
+par_result_in_continous_mem elapsed time: 5379 microseconds
+pop2device elapsed time: 2146 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 792 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 193 microseconds
+copy result to host elapsed time: 222 microseconds
+par_result_in_continous_mem elapsed time: 5374 microseconds
+pop2device elapsed time: 2107 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 790 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 196 microseconds
+copy result to host elapsed time: 222 microseconds
+par_result_in_continous_mem elapsed time: 5404 microseconds
+pop2device elapsed time: 2110 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 793 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 195 microseconds
+copy result to host elapsed time: 223 microseconds
+par_result_in_continous_mem elapsed time: 5333 microseconds
+pop2device elapsed time: 2117 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 794 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 194 microseconds
+copy result to host elapsed time: 222 microseconds
+par_result_in_continous_mem elapsed time: 5404 microseconds
+pop2device elapsed time: 2105 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 794 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 196 microseconds
+copy result to host elapsed time: 223 microseconds
+par_result_in_continous_mem elapsed time: 5320 microseconds
+pop2device elapsed time: 2100 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 791 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 193 microseconds
+copy result to host elapsed time: 239 microseconds
+par_result_in_continous_mem elapsed time: 5343 microseconds
+pop2device elapsed time: 2111 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 793 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 193 microseconds
+copy result to host elapsed time: 218 microseconds
+par_result_in_continous_mem elapsed time: 5381 microseconds
+pop2device elapsed time: 2099 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 792 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 195 microseconds
+copy result to host elapsed time: 232 microseconds
+par_result_in_continous_mem elapsed time: 5348 microseconds
+pop2device elapsed time: 2113 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 793 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 200 microseconds
+copy result to host elapsed time: 219 microseconds
+par_result_in_continous_mem elapsed time: 5396 microseconds
+pop2device elapsed time: 2141 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 792 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 199 microseconds
+copy result to host elapsed time: 219 microseconds
+par_result_in_continous_mem elapsed time: 5416 microseconds
+pop2device elapsed time: 2117 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 792 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 201 microseconds
+copy result to host elapsed time: 220 microseconds
+par_result_in_continous_mem elapsed time: 5434 microseconds
+pop2device elapsed time: 2129 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 790 microseconds
+device_reduce_kernel elapsed time: 22 microseconds
+collect_kv_in_ht elapsed time: 198 microseconds
+copy result to host elapsed time: 223 microseconds
+par_result_in_continous_mem elapsed time: 5397 microseconds
+pop2device elapsed time: 2111 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 792 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 195 microseconds
+copy result to host elapsed time: 220 microseconds
+par_result_in_continous_mem elapsed time: 5370 microseconds
+pop2device elapsed time: 2120 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 791 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 206 microseconds
+copy result to host elapsed time: 221 microseconds
+par_result_in_continous_mem elapsed time: 5439 microseconds
+pop2device elapsed time: 2112 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 796 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 195 microseconds
+copy result to host elapsed time: 220 microseconds
+par_result_in_continous_mem elapsed time: 5389 microseconds
+pop2device elapsed time: 2104 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 791 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 197 microseconds
+copy result to host elapsed time: 222 microseconds
+par_result_in_continous_mem elapsed time: 5370 microseconds
+pop2device elapsed time: 2104 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 792 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 193 microseconds
+copy result to host elapsed time: 221 microseconds
+par_result_in_continous_mem elapsed time: 5429 microseconds
+pop2device elapsed time: 2133 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 791 microseconds
+device_reduce_kernel elapsed time: 23 microseconds
+collect_kv_in_ht elapsed time: 190 microseconds
+copy result to host elapsed time: 223 microseconds
+par_result_in_continous_mem elapsed time: 5445 microseconds
+pop2device elapsed time: 2098 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 793 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 198 microseconds
+copy result to host elapsed time: 219 microseconds
+par_result_in_continous_mem elapsed time: 5444 microseconds
+pop2device elapsed time: 2107 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 791 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 201 microseconds
+copy result to host elapsed time: 221 microseconds
+par_result_in_continous_mem elapsed time: 5350 microseconds
+pop2device elapsed time: 2111 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 792 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 201 microseconds
+copy result to host elapsed time: 220 microseconds
+par_result_in_continous_mem elapsed time: 5448 microseconds
+pop2device elapsed time: 2115 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 793 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 193 microseconds
+copy result to host elapsed time: 221 microseconds
+par_result_in_continous_mem elapsed time: 5437 microseconds
+pop2device elapsed time: 2100 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 796 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 196 microseconds
+copy result to host elapsed time: 219 microseconds
+par_result_in_continous_mem elapsed time: 5449 microseconds
+pop2device elapsed time: 2120 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 791 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 202 microseconds
+copy result to host elapsed time: 221 microseconds
+par_result_in_continous_mem elapsed time: 5358 microseconds
+pop2device elapsed time: 2100 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 794 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 195 microseconds
+copy result to host elapsed time: 222 microseconds
+par_result_in_continous_mem elapsed time: 5355 microseconds
+pop2device elapsed time: 2119 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 794 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 193 microseconds
+copy result to host elapsed time: 221 microseconds
+par_result_in_continous_mem elapsed time: 5390 microseconds
+pop2device elapsed time: 2127 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 792 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 194 microseconds
+copy result to host elapsed time: 222 microseconds
+par_result_in_continous_mem elapsed time: 5390 microseconds
+pop2device elapsed time: 2106 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 796 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 194 microseconds
+copy result to host elapsed time: 223 microseconds
+par_result_in_continous_mem elapsed time: 5331 microseconds
+pop2device elapsed time: 2113 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 796 microseconds
+device_reduce_kernel elapsed time: 26 microseconds
+collect_kv_in_ht elapsed time: 199 microseconds
+copy result to host elapsed time: 223 microseconds
+par_result_in_continous_mem elapsed time: 5472 microseconds
+pop2device elapsed time: 2122 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 793 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 203 microseconds
+copy result to host elapsed time: 221 microseconds
+par_result_in_continous_mem elapsed time: 5365 microseconds
+pop2device elapsed time: 2121 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 796 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 201 microseconds
+copy result to host elapsed time: 223 microseconds
+par_result_in_continous_mem elapsed time: 5440 microseconds
+pop2device elapsed time: 2108 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 792 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 195 microseconds
+copy result to host elapsed time: 221 microseconds
+par_result_in_continous_mem elapsed time: 5375 microseconds
+pop2device elapsed time: 2110 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 794 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 197 microseconds
+copy result to host elapsed time: 222 microseconds
+par_result_in_continous_mem elapsed time: 5437 microseconds
+pop2device elapsed time: 2103 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 793 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 198 microseconds
+copy result to host elapsed time: 221 microseconds
+par_result_in_continous_mem elapsed time: 5456 microseconds
+pop2device elapsed time: 2102 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 798 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 197 microseconds
+copy result to host elapsed time: 220 microseconds
+par_result_in_continous_mem elapsed time: 5335 microseconds
+pop2device elapsed time: 2128 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 794 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 195 microseconds
+copy result to host elapsed time: 237 microseconds
+par_result_in_continous_mem elapsed time: 5357 microseconds
+pop2device elapsed time: 2126 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 792 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 195 microseconds
+copy result to host elapsed time: 221 microseconds
+par_result_in_continous_mem elapsed time: 5285 microseconds
+pop2device elapsed time: 2112 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 797 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 194 microseconds
+copy result to host elapsed time: 222 microseconds
+par_result_in_continous_mem elapsed time: 5318 microseconds
+pop2device elapsed time: 2103 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 795 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 198 microseconds
+copy result to host elapsed time: 222 microseconds
+par_result_in_continous_mem elapsed time: 5356 microseconds
+pop2device elapsed time: 2104 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 794 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 199 microseconds
+copy result to host elapsed time: 222 microseconds
+par_result_in_continous_mem elapsed time: 5290 microseconds
+pop2device elapsed time: 2094 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 794 microseconds
+device_reduce_kernel elapsed time: 24 microseconds
+collect_kv_in_ht elapsed time: 203 microseconds
+copy result to host elapsed time: 222 microseconds
+par_result_in_continous_mem elapsed time: 5350 microseconds
+pop2device elapsed time: 2113 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 799 microseconds
+device_reduce_kernel elapsed time: 27 microseconds
+collect_kv_in_ht elapsed time: 194 microseconds
+copy result to host elapsed time: 222 microseconds
+par_result_in_continous_mem elapsed time: 5320 microseconds
+pop2device elapsed time: 2118 microseconds
+groupby_agg_and_statistic_kernel elapsed time: 795 microseconds
+device_reduce_kernel elapsed time: 25 microseconds
+collect_kv_in_ht elapsed time: 198 microseconds
+copy result to host elapsed time: 221 microseconds
+result kv num: 100000000
