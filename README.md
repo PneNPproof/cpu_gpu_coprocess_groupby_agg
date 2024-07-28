@@ -13,3 +13,4 @@
 - [] hash function random seed
 - [] how to set tile_len
 - [] attention alignment problem
+- [] cpu process partition only or groupby_agg_partiton in phase_1
