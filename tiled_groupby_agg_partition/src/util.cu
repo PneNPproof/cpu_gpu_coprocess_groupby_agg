@@ -1,6 +1,8 @@
 #include "util.cuh"
 #include <cuda_runtime.h>
 
+
+
 template<typename key_type, typename val_type>
 void *pre_device_alloc(key_type **groupby_keys,
                        val_type **agg_vals,

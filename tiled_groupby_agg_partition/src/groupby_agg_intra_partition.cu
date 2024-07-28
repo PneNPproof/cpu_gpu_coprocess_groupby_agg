@@ -6,6 +6,7 @@
 #include <mutex>
 
 #include "kernel.cuh"
+#include "util.cuh"
 
 size_t g_par_counter;
 std::mutex g_par_counter_mutex;
@@ -128,12 +129,20 @@ void groupby_agg_and_statistic(key_type *groupby_keys,
                                cudaStream_t stream,
                                key_type empty_key) 
 {
+
+  #ifndef NDEBUG
+  RuntimeMeasurement timer;
+  #endif
+  #ifndef NDEBUG
+  timer.start();
+  #endif
+
   size_t bdx_1 = 256;
   size_t gdx_1 = (kv_num + bdx_1 - 1) / bdx_1;
   auto kernel_1_block_num = gdx_1;
 
   // one more elements for reduce result
-  cudaMemsetAsync(block_result_num, 0x00, sizeof(u_int32_t) * (kernel_1_block_num + 1), stream);
+  // cudaMemsetAsync(block_result_num, 0x00, sizeof(u_int32_t) * (kernel_1_block_num + 1), stream);
   //
 
   groupby_agg_and_statistic_kernel<<<gdx_1, bdx_1, 0, stream>>>
@@ -147,12 +156,29 @@ void groupby_agg_and_statistic(key_type *groupby_keys,
                                    Capacity,
                                    empty_key);
 
+  #ifndef NDEBUG
+  cudaStreamSynchronize(stream);
+  timer.stop();
+  timer.print_elapsed_time("groupby_agg_and_statistic_kernel");
+  #endif
+
+
+  #ifndef NDEBUG
+  timer.start();
+  #endif
+
   size_t bdx_2 = 256;
   size_t gdx_2 = (kernel_1_block_num + 2 * bdx_2 -1) / (2 * bdx_2);
   auto reuduce_sum = block_result_num + kernel_1_block_num;
   device_reduce_kernel<<<gdx_2, bdx_2, 0, stream>>>(block_result_num, kernel_1_block_num, reuduce_sum);
 
   cudaMemcpyAsync(real_time_result_num, reuduce_sum, sizeof(u_int32_t), cudaMemcpyDeviceToHost, stream);
+
+  #ifndef NDEBUG
+  cudaStreamSynchronize(stream);
+  timer.stop();
+  timer.print_elapsed_time("device_reduce_kernel");
+  #endif
 }
 
 
@@ -176,6 +202,10 @@ void groupby_agg_intra_partition_thread(std::vector<par_result> &par_result_vec,
                                         std::vector<size_t> &par_kv_begin, 
                                         std::vector<size_t> &par_result_kv_num)
 {
+  #ifndef NDEBUG
+  RuntimeMeasurement timer;
+  #endif
+
   size_t next_load_kv_num;
   size_t already_load_kv_num;
 
@@ -194,6 +224,10 @@ void groupby_agg_intra_partition_thread(std::vector<par_result> &par_result_vec,
     }
     //
 
+    #ifndef NDEBUG
+    timer.start();
+    #endif
+
     // prepare ht_keys, ht_vals and indicator
     cudaMemsetAsync(ht_keys, 0xff, sizeof(key_type) * Capacity, stream);
     cudaMemsetAsync(ht_vals, 0x00, sizeof(val_type) * Capacity, stream);
@@ -208,6 +242,12 @@ void groupby_agg_intra_partition_thread(std::vector<par_result> &par_result_vec,
     par_result_in_continous_mem(pr, host_groupby_keys_result + par_kv_begin[par_ind], host_agg_vals_result + par_kv_begin[par_ind]);
     //
 
+    #ifndef NDEBUG
+    cudaStreamSynchronize(stream);
+    timer.stop();
+    timer.print_elapsed_time("par_result_in_continous_mem");
+    #endif
+
     // try to deal with all kv for this par in gpu
     auto rest_kv_num = pr.size;
     while (rest_kv_num > 0) {
@@ -215,7 +255,15 @@ void groupby_agg_intra_partition_thread(std::vector<par_result> &par_result_vec,
       next_load_kv_num = max_load_num - already_load_kv_num;
       //
       if (rest_kv_num <= next_load_kv_num) {
+        #ifndef NDEBUG
+        timer.start();
+        #endif
         pr.pop2device(groupby_keys, agg_vals, rest_kv_num, stream);
+        #ifndef NDEBUG
+        cudaStreamSynchronize(stream);
+        timer.stop();
+        timer.print_elapsed_time("pop2device");
+        #endif
         groupby_agg_and_statistic(groupby_keys,
                                   agg_vals,
                                   ht_keys,
@@ -234,7 +282,15 @@ void groupby_agg_intra_partition_thread(std::vector<par_result> &par_result_vec,
           std::cout<<"hash table overflow\n";
           exit(2);
         }
+        #ifndef NDEBUG
+        timer.start();
+        #endif
         pr.pop2device(groupby_keys, agg_vals, next_load_kv_num, stream);
+        #ifndef NDEBUG
+        cudaStreamSynchronize(stream);
+        timer.stop();
+        timer.print_elapsed_time("pop2device");
+        #endif
         groupby_agg_and_statistic(groupby_keys,
                                   agg_vals,
                                   ht_keys,
@@ -255,6 +311,10 @@ void groupby_agg_intra_partition_thread(std::vector<par_result> &par_result_vec,
 
     // now all kv in this par has been groupby_agg into ht, we collect result
 
+    #ifndef NDEBUG
+    timer.start();
+    #endif
+
     // scan indicator
     scan_exclusive(indicator, indicator, Capacity, stream, temp_storage, temp_storage_bytes);
     //
@@ -270,10 +330,25 @@ void groupby_agg_intra_partition_thread(std::vector<par_result> &par_result_vec,
                      Capacity,
                      empty_key);
 
+    #ifndef NDEBUG
+    cudaStreamSynchronize(stream);
+    timer.stop();
+    timer.print_elapsed_time("collect_kv_in_ht");
+    #endif
     //
+
+    #ifndef NDEBUG
+    timer.start();
+    #endif
     par_result_kv_num[par_ind] = already_load_kv_num;
     cudaMemcpyAsync(host_groupby_keys_result + par_kv_begin[par_ind], groupby_keys, already_load_kv_num * sizeof(key_type), cudaMemcpyDeviceToHost, stream);
     cudaMemcpyAsync(host_agg_vals_result + par_kv_begin[par_ind], agg_vals, already_load_kv_num * sizeof(val_type), cudaMemcpyDeviceToHost, stream);
+
+    #ifndef NDEBUG
+    cudaStreamSynchronize(stream);
+    timer.stop();
+    timer.print_elapsed_time("copy result to host");
+    #endif
   }
   //
 }
