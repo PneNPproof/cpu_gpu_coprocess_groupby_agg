@@ -41,11 +41,11 @@ void compute_groupby_agg_result(key_type *device_groupby_keys,
                                 void *temp_store,
                                 size_t temp_store_bytes)
 {
-#ifndef NDEBUG
+#ifdef MEASURE_TIME
   RuntimeMeasurement timer;
 #endif
 
-  #ifndef NDEBUG
+  #ifdef MEASURE_TIME
   timer.start();
   #endif
 
@@ -78,13 +78,13 @@ void compute_groupby_agg_result(key_type *device_groupby_keys,
                                                                           random_seed_1);
 
 
-  #ifndef NDEBUG
+  #ifdef MEASURE_TIME
   cudaStreamSynchronize(stream);
   timer.stop();
   timer.print_elapsed_time("kernel 1");
   #endif
 
-  #ifndef NDEBUG
+  #ifdef MEASURE_TIME
   timer.start();
   #endif
 
@@ -132,14 +132,14 @@ void compute_groupby_agg_result(key_type *device_groupby_keys,
                                                                                empty_key_2);
   
   
-  #ifndef NDEBUG
+  #ifdef MEASURE_TIME
   cudaStreamSynchronize(stream);
   timer.stop();
   timer.print_elapsed_time("kernel 2");
   #endif
 
 
-  #ifndef NDEBUG
+  #ifdef MEASURE_TIME
   timer.start();
   #endif
 
@@ -173,14 +173,14 @@ void compute_groupby_agg_result(key_type *device_groupby_keys,
 
   
 
-  #ifndef NDEBUG
+  #ifdef MEASURE_TIME
   cudaStreamSynchronize(stream);
   timer.stop();
   timer.print_elapsed_time("kernel 3");
   #endif
 
 
-  #ifndef NDEBUG
+  #ifdef MEASURE_TIME
   timer.start();
   #endif
   // prepare fourth kernel: device array initialization and kernel configuration
@@ -219,14 +219,14 @@ void compute_groupby_agg_result(key_type *device_groupby_keys,
                                                                        random_seed_4);
 
 
-  #ifndef NDEBUG
+  #ifdef MEASURE_TIME
   cudaStreamSynchronize(stream);
   timer.stop();
   timer.print_elapsed_time("kernel 4");
   #endif
 
 
-  #ifndef NDEBUG
+  #ifdef MEASURE_TIME
   timer.start();
   #endif
   // prepare fifth kernel: device array initialization and kernel configuration
@@ -261,7 +261,7 @@ void compute_groupby_agg_result(key_type *device_groupby_keys,
                                                                                           ht_indicator_scan_5,
                                                                                           empty_key_5);
 
-  #ifndef NDEBUG
+  #ifdef MEASURE_TIME
   cudaStreamSynchronize(stream);
   timer.stop();
   timer.print_elapsed_time("kernel 5");
@@ -285,10 +285,10 @@ void compute_partition_result(key_type *keys,
                               void *temp_store,
                               size_t temp_store_bytes)
 {
-  #ifndef NDEBUG
+  #ifdef MEASURE_TIME
   RuntimeMeasurement timer;
   #endif
-  #ifndef NDEBUG
+  #ifdef MEASURE_TIME
   timer.start();
   #endif
   // calculate kv intra group ind
@@ -315,13 +315,13 @@ void compute_partition_result(key_type *keys,
                  temp_store,
                  temp_store_bytes);
   //
-  #ifndef NDEBUG
+  #ifdef MEASURE_TIME
   cudaStreamSynchronize(stream);
   timer.stop();
   timer.print_elapsed_time("kernel 6");
   #endif
 
-  #ifndef NDEBUG
+  #ifdef MEASURE_TIME
   timer.start();
   #endif
   // calculate kv inter group ind and insert
@@ -344,7 +344,7 @@ void compute_partition_result(key_type *keys,
                                                                          par_rec_num_scan_2,
                                                                          P_2);
   //
-  #ifndef NDEBUG
+  #ifdef MEASURE_TIME
   cudaStreamSynchronize(stream);
   timer.stop();
   timer.print_elapsed_time("kernel 7");
@@ -375,7 +375,7 @@ void groupby_agg_partition_thread(key_type *device_groupby_keys,
                                   size_t N,
                                   std::vector<par_result> &par_result_vec)
 {
-  #ifndef NDEBUG
+  #ifdef MEASURE_TIME
   RuntimeMeasurement timer;
   #endif
 
@@ -400,7 +400,7 @@ void groupby_agg_partition_thread(key_type *device_groupby_keys,
     auto tile_keys_sz = sizeof(key_type) * device_kv_num;
     auto tile_vals_sz = sizeof(val_type) * device_kv_num;
 
-    #ifndef NDEBUG
+    #ifdef MEASURE_TIME
     timer.start();
     #endif
 
@@ -411,7 +411,7 @@ void groupby_agg_partition_thread(key_type *device_groupby_keys,
     cudaMemsetAsync(indicator, 0x00, sizeof(u_int32_t) * device_ht_sz, stream);
     cudaMemsetAsync(par_rec_num, 0x00, sizeof(u_int32_t) * P, stream);
 
-    #ifndef NDEBUG
+    #ifdef MEASURE_TIME
     cudaStreamSynchronize(stream);
     timer.stop();
     timer.print_elapsed_time("groupby_agg_partition copy in");
@@ -461,7 +461,7 @@ void groupby_agg_partition_thread(key_type *device_groupby_keys,
                                                  temp_store_bytes);
     //
 
-    #ifndef NDEBUG
+    #ifdef MEASURE_TIME
     timer.start();
     #endif
 
@@ -482,7 +482,7 @@ void groupby_agg_partition_thread(key_type *device_groupby_keys,
     cudaStreamSynchronize(stream);
     //
 
-    #ifndef NDEBUG
+    #ifdef MEASURE_TIME
     cudaStreamSynchronize(stream);
     timer.stop();
     timer.print_elapsed_time("groupby_agg_partition copy out");

@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <cub/cub.cuh>
 
-#ifndef NDEBUG
+#ifdef MEASURE_TIME
 #include <chrono>
 #include <string>
 class RuntimeMeasurement {

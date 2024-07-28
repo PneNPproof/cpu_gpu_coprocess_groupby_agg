@@ -130,10 +130,10 @@ void groupby_agg_and_statistic(key_type *groupby_keys,
                                key_type empty_key) 
 {
 
-  #ifndef NDEBUG
+  #ifdef MEASURE_TIME
   RuntimeMeasurement timer;
   #endif
-  #ifndef NDEBUG
+  #ifdef MEASURE_TIME
   timer.start();
   #endif
 
@@ -156,14 +156,14 @@ void groupby_agg_and_statistic(key_type *groupby_keys,
                                    Capacity,
                                    empty_key);
 
-  #ifndef NDEBUG
+  #ifdef MEASURE_TIME
   cudaStreamSynchronize(stream);
   timer.stop();
   timer.print_elapsed_time("groupby_agg_and_statistic_kernel");
   #endif
 
 
-  #ifndef NDEBUG
+  #ifdef MEASURE_TIME
   timer.start();
   #endif
 
@@ -174,7 +174,7 @@ void groupby_agg_and_statistic(key_type *groupby_keys,
 
   cudaMemcpyAsync(real_time_result_num, reuduce_sum, sizeof(u_int32_t), cudaMemcpyDeviceToHost, stream);
 
-  #ifndef NDEBUG
+  #ifdef MEASURE_TIME
   cudaStreamSynchronize(stream);
   timer.stop();
   timer.print_elapsed_time("device_reduce_kernel");
@@ -202,7 +202,7 @@ void groupby_agg_intra_partition_thread(std::vector<par_result> &par_result_vec,
                                         std::vector<size_t> &par_kv_begin, 
                                         std::vector<size_t> &par_result_kv_num)
 {
-  #ifndef NDEBUG
+  #ifdef MEASURE_TIME
   RuntimeMeasurement timer;
   #endif
 
@@ -224,7 +224,7 @@ void groupby_agg_intra_partition_thread(std::vector<par_result> &par_result_vec,
     }
     //
 
-    #ifndef NDEBUG
+    #ifdef MEASURE_TIME
     timer.start();
     #endif
 
@@ -242,7 +242,7 @@ void groupby_agg_intra_partition_thread(std::vector<par_result> &par_result_vec,
     par_result_in_continous_mem(pr, host_groupby_keys_result + par_kv_begin[par_ind], host_agg_vals_result + par_kv_begin[par_ind]);
     //
 
-    #ifndef NDEBUG
+    #ifdef MEASURE_TIME
     cudaStreamSynchronize(stream);
     timer.stop();
     timer.print_elapsed_time("par_result_in_continous_mem");
@@ -255,11 +255,11 @@ void groupby_agg_intra_partition_thread(std::vector<par_result> &par_result_vec,
       next_load_kv_num = max_load_num - already_load_kv_num;
       //
       if (rest_kv_num <= next_load_kv_num) {
-        #ifndef NDEBUG
+        #ifdef MEASURE_TIME
         timer.start();
         #endif
         pr.pop2device(groupby_keys, agg_vals, rest_kv_num, stream);
-        #ifndef NDEBUG
+        #ifdef MEASURE_TIME
         cudaStreamSynchronize(stream);
         timer.stop();
         timer.print_elapsed_time("pop2device");
@@ -282,11 +282,11 @@ void groupby_agg_intra_partition_thread(std::vector<par_result> &par_result_vec,
           std::cout<<"hash table overflow\n";
           exit(2);
         }
-        #ifndef NDEBUG
+        #ifdef MEASURE_TIME
         timer.start();
         #endif
         pr.pop2device(groupby_keys, agg_vals, next_load_kv_num, stream);
-        #ifndef NDEBUG
+        #ifdef MEASURE_TIME
         cudaStreamSynchronize(stream);
         timer.stop();
         timer.print_elapsed_time("pop2device");
@@ -311,7 +311,7 @@ void groupby_agg_intra_partition_thread(std::vector<par_result> &par_result_vec,
 
     // now all kv in this par has been groupby_agg into ht, we collect result
 
-    #ifndef NDEBUG
+    #ifdef MEASURE_TIME
     timer.start();
     #endif
 
@@ -330,21 +330,21 @@ void groupby_agg_intra_partition_thread(std::vector<par_result> &par_result_vec,
                      Capacity,
                      empty_key);
 
-    #ifndef NDEBUG
+    #ifdef MEASURE_TIME
     cudaStreamSynchronize(stream);
     timer.stop();
     timer.print_elapsed_time("collect_kv_in_ht");
     #endif
     //
 
-    #ifndef NDEBUG
+    #ifdef MEASURE_TIME
     timer.start();
     #endif
     par_result_kv_num[par_ind] = already_load_kv_num;
     cudaMemcpyAsync(host_groupby_keys_result + par_kv_begin[par_ind], groupby_keys, already_load_kv_num * sizeof(key_type), cudaMemcpyDeviceToHost, stream);
     cudaMemcpyAsync(host_agg_vals_result + par_kv_begin[par_ind], agg_vals, already_load_kv_num * sizeof(val_type), cudaMemcpyDeviceToHost, stream);
 
-    #ifndef NDEBUG
+    #ifdef MEASURE_TIME
     cudaStreamSynchronize(stream);
     timer.stop();
     timer.print_elapsed_time("copy result to host");
