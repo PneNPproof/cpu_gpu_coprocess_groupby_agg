@@ -1,6 +1,7 @@
 #include "util.cuh"
 #include "par_result.cuh"
 #include "BS_thread_pool.hpp"
+#include "cpu_partition.cuh"
 #include <mutex>
 #include <thread>
 
