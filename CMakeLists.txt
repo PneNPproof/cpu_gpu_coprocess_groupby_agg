@@ -6,7 +6,7 @@ project(tiled_groupby_agg_partition_lib_and_test LANGUAGES CXX CUDA)
 # set(CMAKE_CXX_STANDARD 17)
 # set(CMAKE_CXX_STANDARD_REQUIRED True)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
-set(CMAKE_BUILD_TYPE "Release")
+set(CMAKE_BUILD_TYPE Debug)
 set(CMAKE_VERBOSE_MAKEFILE ON)
 # add_definitions(-DMEASURE_TIME -DMEASURE_TIME_2)
 

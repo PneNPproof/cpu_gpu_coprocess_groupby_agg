@@ -6,7 +6,7 @@
 #include "util.cuh"
 #include "cpu_partition.cuh"
 
-#define UPDATE_PAR_RESULT_THREAD_NUM 4
+#define UPDATE_PAR_RESULT_THREAD_NUM 1
 
 std::mutex g_counter_mutex;
 std::mutex g_pool_mutex;
@@ -523,8 +523,8 @@ void groupby_agg_partition(key_type *host_keys_buffer,
   cudaMallocHost(&last_host_tile_key_buffer, sizeof(key_type) * tile_len);
   cudaMallocHost(&last_host_tile_val_buffer, sizeof(val_type) * tile_len);
 
-  size_t cpu_partition_thread_num = 4;
-  size_t task_num = 4;
+  size_t cpu_partition_thread_num = 1;
+  size_t task_num = 1;
   u_int32_t *thread_local_par_rec_num;
   u_int32_t *global_par_rec_num;
   u_int32_t *hf_val_buffer;
@@ -533,7 +533,6 @@ void groupby_agg_partition(key_type *host_keys_buffer,
   cudaMallocHost(&global_par_rec_num, sizeof(u_int32_t) * (P + 1));
   cudaMallocHost(&hf_val_buffer, sizeof(u_int32_t) * tile_len);
   cudaMallocHost(&collect_loc_buffer, sizeof(u_int32_t) * tile_len);
-  BS::thread_pool cpu_partition_pool(cpu_partition_thread_num);
   //
 
   //

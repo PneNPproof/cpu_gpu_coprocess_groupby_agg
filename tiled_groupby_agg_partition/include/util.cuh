@@ -27,6 +27,10 @@ private:
     std::chrono::steady_clock::time_point start_time, end_time;
 };
 
+typedef u_int32_t key_type;
+typedef u_int32_t val_type;
+const key_type empty_k = 0xffffffff;
+
 class murmur3_32bit {
 public:
     murmur3_32bit(u_int32_t random_seed);
@@ -34,10 +38,6 @@ public:
 private:
     u_int32_t seed;
 };
-
-typedef u_int32_t key_type;
-typedef u_int32_t val_type;
-const key_type empty_k = 0xffffffff;
 
 template<typename key_type, typename val_type>
 void *pre_device_alloc(key_type **groupby_keys,

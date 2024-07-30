@@ -4,6 +4,7 @@
 #include "cpu_partition.cuh"
 #include <mutex>
 #include <thread>
+#include <cuco/detail/hash_functions/murmurhash3.cuh>
 
 extern std::mutex g_counter_mutex;
 extern std::mutex g_pool_mutex;
@@ -20,7 +21,8 @@ void cal_thread_local_collect_ind_task(key_type *key_buffer,
                                        size_t P
                                        )
 {
-  murmur3_32bit hf(0);
+  // murmur3_32bit hf(0);
+  cuco::detail::MurmurHash3_32<key_type> hf;
 
   for (size_t i = 0; i < buffer_len; i++)
   {
@@ -113,7 +115,7 @@ void cpu_task_assign_thread(key_type *host_keys,
     
     // initialize some ds
     memset(thread_local_par_rec_num, 0x00, sizeof(u_int32_t) * P * task_num);
-    memset(global_par_rec_num, 0x00, sizeof(u_int32_t) * P);
+    memset(global_par_rec_num, 0x00, sizeof(u_int32_t) * (P + 1));
     //
 
 

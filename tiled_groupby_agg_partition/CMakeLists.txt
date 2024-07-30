@@ -10,8 +10,9 @@ set(CMAKE_CUDA_STANDARD 17)
 set(CMAKE_CUDA_STANDARD_REQUIRED TRUE)
 set(CMAKE_CXX_STANDARD_REQUIRED TRUE)
 
-# set(CMAKE_CUDA_FLAGS "${CMAKE_CUDA_FLAGS} -G -g")
-set(CMAKE_BUILD_TYPE Release)
+set(CMAKE_CUDA_FLAGS "${CMAKE_CUDA_FLAGS} -G -g")
+set(CMAKE_BUILD_TYPE Debug)
+
 set(TARGET_NAME ${STATIC_LIB_NAME})
 
 include_directories(${PROJECT_SOURCE_DIR}/include)
@@ -22,7 +23,7 @@ add_library(${TARGET_NAME} STATIC
             ${PROJECT_SOURCE_DIR}/src/util.cu
             ${PROJECT_SOURCE_DIR}/src/par_result.cu
             ${PROJECT_SOURCE_DIR}/src/cpu_partition.cu
-            ${PROJECT_SOURCE_DIR}/src/MurmurHash3.cpp
+            ${PROJECT_SOURCE_DIR}/src/MurmurHash3.cu
            )     
 
 set_target_properties(${TARGET_NAME} PROPERTIES CUDA_ARCHITECTURES "80" ARCHIVE_OUTPUT_DIRECTORY ${STATIC_LIB_PATH})
