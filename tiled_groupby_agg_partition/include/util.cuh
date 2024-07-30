@@ -3,9 +3,11 @@
 #include <stdlib.h>
 #include <cub/cub.cuh>
 
-// #ifdef MEASURE_TIME
 #include <chrono>
 #include <string>
+
+#include "MurmurHash3.h"
+
 class RuntimeMeasurement {
 public:
     inline void start() {
@@ -24,7 +26,14 @@ public:
 private:
     std::chrono::steady_clock::time_point start_time, end_time;
 };
-// #endif
+
+class murmur3_32bit {
+public:
+    murmur3_32bit(u_int32_t random_seed);
+    u_int32_t operator()(key_type key) const;
+private:
+    u_int32_t seed;
+};
 
 typedef u_int32_t key_type;
 typedef u_int32_t val_type;

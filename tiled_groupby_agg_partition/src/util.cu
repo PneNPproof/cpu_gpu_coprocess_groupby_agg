@@ -2,6 +2,14 @@
 #include <cuda_runtime.h>
 
 
+murmur3_32bit::murmur3_32bit(u_int32_t random_seed):seed(random_seed) {}
+
+u_int32_t murmur3_32bit::operator()(key_type key) const
+{
+  u_int32_t rv;
+  MurmurHash3_x86_32(&key, sizeof(key_type), seed, &rv);
+  return rv;
+}
 
 template<typename key_type, typename val_type>
 void *pre_device_alloc(key_type **groupby_keys,

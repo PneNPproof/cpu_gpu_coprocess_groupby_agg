@@ -14,3 +14,4 @@
 - [] how to set tile_len
 - [] attention alignment problem
 - [] cpu process partition only or groupby_agg_partiton in phase_1
+- [] cpu collect into host_key_buffer(the first tile cpu process need to copy to a extra buffer, other tile cpu process could be collect to last tile cpu process)
