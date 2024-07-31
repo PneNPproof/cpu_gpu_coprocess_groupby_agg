@@ -5,9 +5,11 @@ project(tiled_groupby_agg_partition_lib_and_test LANGUAGES CXX CUDA)
 # # specify the C++ standard
 # set(CMAKE_CXX_STANDARD 17)
 # set(CMAKE_CXX_STANDARD_REQUIRED True)
+
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
-set(CMAKE_BUILD_TYPE "Release")
 set(CMAKE_VERBOSE_MAKEFILE ON)
+
+set(CMAKE_BUILD_TYPE "Release")
 
 set(STATIC_LIB_PATH ${PROJECT_SOURCE_DIR}/lib)
 set(STATIC_LIB_NAME tiled_groupby_agg_partition)
