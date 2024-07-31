@@ -67,7 +67,13 @@ void cal_global_inter_par_collect_ind_and_collect_task(key_type *key_buffer,
   for (size_t i = 0; i < buffer_len; i++)
   {
     auto par_ind = hf_val_buffer[i];
-    auto collect_loc = collect_loc_buffer[par_ind] + local_par_rec_num[par_ind] + global_par_rec_num[par_ind];
+    auto collect_loc = collect_loc_buffer[i] + local_par_rec_num[par_ind] + global_par_rec_num[par_ind];
+    // if (g_counter == 100) {
+    //   printf("i %d hello\n", i);
+    // }
+    // if (g_counter == 100) {
+    //   printf("val_buffer %ld\n", val_buffer[i]);
+    // }
     last_host_key_buffer[collect_loc] = key_buffer[i];
     last_host_val_buffer[collect_loc] = val_buffer[i];
   }
@@ -81,7 +87,7 @@ void cpu_task_assign_thread(key_type *host_keys,
                             size_t tile_len,
                             size_t N,
                             u_int32_t *thread_local_par_rec_num,
-                            u_int32_t *global_par_rec_num,
+                            u_int32_t *global_par_rec_num_all_tile,
                             size_t cpu_partition_thread_num,
                             size_t P,
                             key_type *last_host_key_buffer,
@@ -111,13 +117,15 @@ void cpu_task_assign_thread(key_type *host_keys,
     }
     auto tile_kv_num = tile_end - tile_begin;
     auto host_key_buffer = host_keys + tile_begin;
-    auto host_val_buffer = host_vals + tile_end;
+    auto host_val_buffer = host_vals + tile_begin;
     
     // initialize some ds
     memset(thread_local_par_rec_num, 0x00, sizeof(u_int32_t) * P * task_num);
-    memset(global_par_rec_num, 0x00, sizeof(u_int32_t) * (P + 1));
+    // memset(global_par_rec_num, 0x00, sizeof(u_int32_t) * (P + 1));
+    auto global_par_rec_num = global_par_rec_num_all_tile + tile_id * (P + 1);
     //
 
+    // printf("tile id %ld\n", tile_id);
 
     // assign cal_thread_local_collect_ind_task 
     for (size_t task_ind = 0; task_ind < task_num; task_ind++)
@@ -165,6 +173,14 @@ void cpu_task_assign_thread(key_type *host_keys,
       last_num = now_num;
     }
     //
+
+    // if (tile_id == 99)
+    // {
+    //   for (int i=0;i<tile_len;i++)
+    //   {
+    //     printf("last_host_key_buffer: %d %d \n", i, last_host_key_buffer[i]);
+    //   }
+    // }
 
     // assign cal_global_inter_par_collect_ind_and_collect_task
     for (size_t task_ind = 0; task_ind < task_num; task_ind++)
