@@ -94,7 +94,7 @@ int main(int argc, char *argv[])
   int dist_kind = 0;
   size_t tile_len = 1e7;
   size_t P = 300;
-  size_t nstreams = 1;
+  size_t nstreams = 4;
   app.add_option("-n", kv_num);
   app.add_option("-c", cardinality_percentage);
   app.add_option("-d", dist_kind);
@@ -123,9 +123,10 @@ int main(int argc, char *argv[])
   // cudaMallocHost(&host_ht_keys, sizeof(k_type) * kv_num);
 
   // for generate random dist and hf
-  std::srand(std::time(nullptr));
-  std::random_device r;
-  std::default_random_engine generator(r());
+  // std::srand(std::time(nullptr));
+  // std::random_device r;
+  // std::default_random_engine generator(r());
+  std::default_random_engine generator;
 
   // generate kv
   generate_various_dist_kv_array<k_type, v_type>(host_keys, host_vals, cardinality, kv_num, skew_factor, generator, dist_kind, empty_key);
