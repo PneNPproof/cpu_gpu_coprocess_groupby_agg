@@ -123,10 +123,10 @@ int main(int argc, char *argv[])
   // cudaMallocHost(&host_ht_keys, sizeof(k_type) * kv_num);
 
   // for generate random dist and hf
-  std::srand(std::time(nullptr));
-  std::random_device r;
-  std::default_random_engine generator(r());
-  // std::default_random_engine generator;
+  // std::srand(std::time(nullptr));
+  // std::random_device r;
+  // std::default_random_engine generator(r());
+  std::default_random_engine generator;
 
   // generate kv
   generate_various_dist_kv_array<k_type, v_type>(host_keys, host_vals, cardinality, kv_num, skew_factor, generator, dist_kind, empty_key);
