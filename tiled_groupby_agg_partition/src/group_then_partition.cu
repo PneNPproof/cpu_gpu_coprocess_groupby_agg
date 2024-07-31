@@ -6,7 +6,7 @@
 #include "util.cuh"
 #include "cpu_partition.cuh"
 
-#define UPDATE_PAR_RESULT_THREAD_NUM 1
+#define UPDATE_PAR_RESULT_THREAD_NUM 4
 
 std::mutex g_counter_mutex;
 std::mutex g_pool_mutex;
@@ -520,22 +520,22 @@ void groupby_agg_partition(key_type *host_keys_buffer,
   cudaMallocHost(&host_collect_sz_5, sizeof(u_int32_t) * nstreams);
 
   // allocate for cpu partition
-  key_type *last_host_tile_key_buffer;
-  val_type *last_host_tile_val_buffer;
-  cudaMallocHost(&last_host_tile_key_buffer, sizeof(key_type) * tile_len);
-  cudaMallocHost(&last_host_tile_val_buffer, sizeof(val_type) * tile_len);
+  // key_type *last_host_tile_key_buffer;
+  // val_type *last_host_tile_val_buffer;
+  // cudaMallocHost(&last_host_tile_key_buffer, sizeof(key_type) * tile_len);
+  // cudaMallocHost(&last_host_tile_val_buffer, sizeof(val_type) * tile_len);
 
-  size_t cpu_partition_thread_num = 4;
-  size_t task_num = 4;
-  u_int32_t *thread_local_par_rec_num;
-  u_int32_t *global_par_rec_num_all_tile;
-  u_int32_t *hf_val_buffer;
-  u_int32_t *collect_loc_buffer;
-  cudaMallocHost(&thread_local_par_rec_num, sizeof(u_int32_t) * P * task_num);
-  cudaMallocHost(&global_par_rec_num_all_tile, sizeof(u_int32_t) * (P + 1) * tile_num);
-  cudaMallocHost(&hf_val_buffer, sizeof(u_int32_t) * tile_len);
-  cudaMallocHost(&collect_loc_buffer, sizeof(u_int32_t) * tile_len);
-  memset(global_par_rec_num_all_tile, 0x00, sizeof(u_int32_t) * (P + 1) * tile_num);
+  // size_t cpu_partition_thread_num = 4;
+  // size_t task_num = 4;
+  // u_int32_t *thread_local_par_rec_num;
+  // u_int32_t *global_par_rec_num_all_tile;
+  // u_int32_t *hf_val_buffer;
+  // u_int32_t *collect_loc_buffer;
+  // cudaMallocHost(&thread_local_par_rec_num, sizeof(u_int32_t) * P * task_num);
+  // cudaMallocHost(&global_par_rec_num_all_tile, sizeof(u_int32_t) * (P + 1) * tile_num);
+  // cudaMallocHost(&hf_val_buffer, sizeof(u_int32_t) * tile_len);
+  // cudaMallocHost(&collect_loc_buffer, sizeof(u_int32_t) * tile_len);
+  // memset(global_par_rec_num_all_tile, 0x00, sizeof(u_int32_t) * (P + 1) * tile_num);
   //
 
   //
@@ -596,28 +596,28 @@ void groupby_agg_partition(key_type *host_keys_buffer,
 
 
   /// cpu coprocess deal with tiles
-  std::thread cpu_assign_thread;
-  cpu_assign_thread = std::thread(cpu_task_assign_thread,
-                                  host_keys_buffer,
-                                  host_vals_buffer,
-                                  tile_num,
-                                  tile_len,
-                                  kv_buffer_len,
-                                  thread_local_par_rec_num,
-                                  global_par_rec_num_all_tile,
-                                  cpu_partition_thread_num,
-                                  P,
-                                  last_host_tile_key_buffer,
-                                  last_host_tile_val_buffer,
-                                  hf_val_buffer,
-                                  collect_loc_buffer,
-                                  task_num,
-                                  std::ref(update_par_result_pool),
-                                  std::ref(par_result_vec));
+  // std::thread cpu_assign_thread;
+  // cpu_assign_thread = std::thread(cpu_task_assign_thread,
+  //                                 host_keys_buffer,
+  //                                 host_vals_buffer,
+  //                                 tile_num,
+  //                                 tile_len,
+  //                                 kv_buffer_len,
+  //                                 thread_local_par_rec_num,
+  //                                 global_par_rec_num_all_tile,
+  //                                 cpu_partition_thread_num,
+  //                                 P,
+  //                                 last_host_tile_key_buffer,
+  //                                 last_host_tile_val_buffer,
+  //                                 hf_val_buffer,
+  //                                 collect_loc_buffer,
+  //                                 task_num,
+  //                                 std::ref(update_par_result_pool),
+  //                                 std::ref(par_result_vec));
   ///
 
   // wait all task finished
-  cpu_assign_thread.join();
+  // cpu_assign_thread.join();
   for (size_t i = 0; i < nstreams; i++) 
   {
     nthreads[i].join();

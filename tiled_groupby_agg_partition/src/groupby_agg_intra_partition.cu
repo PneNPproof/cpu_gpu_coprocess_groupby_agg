@@ -436,6 +436,12 @@ void groupby_agg_intra_partition(std::vector<par_result> &par_result_vec,
   {
     cudaStreamCreateWithFlags(streams + i, cudaStreamNonBlocking);
   }
+
+
+  RuntimeMeasurement timer_phase2;
+  timer_phase2.start();
+
+
   std::vector<std::thread> nthreads(nstreams);
   g_par_counter = 0;
 
@@ -465,6 +471,9 @@ void groupby_agg_intra_partition(std::vector<par_result> &par_result_vec,
   for (int i = 0; i < nstreams; i++) {
     nthreads[i].join();
   }
+
+  timer_phase2.stop();
+  timer_phase2.print_elapsed_time("phase 2");
 
   for (int i = 0; i < nstreams; i++) {
     cudaStreamSynchronize(streams[i]);

@@ -36,7 +36,7 @@ void generate_various_dist_kv_array(Tk *key, Tv *val, size_t cardinality, size_t
   ///
 
   // write set to key to ensure key's cardinality
-  unsigned counter = 0;
+  size_t counter = 0;
   for (auto u : set)
   {
     key[counter] = u;
@@ -47,9 +47,9 @@ void generate_various_dist_kv_array(Tk *key, Tv *val, size_t cardinality, size_t
   // generate rest key
   
   
-  std::uniform_int_distribution<int> distribution_0(0, cardinality - 1);
-  zipfian_int_distribution<int> distribution_1(0, cardinality-1, skew_factor);
-  selfsimilar_int_distribution<int> distribution_2(0, cardinality - 1, skew_factor);
+  std::uniform_int_distribution<unsigned> distribution_0(0, cardinality - 1);
+  zipfian_int_distribution<unsigned> distribution_1(0, cardinality-1, skew_factor);
+  selfsimilar_int_distribution<unsigned> distribution_2(0, cardinality - 1, skew_factor);
 
   for (auto i = cardinality; i < kv_num; i++)
   {
@@ -80,7 +80,7 @@ void generate_various_dist_kv_array(Tk *key, Tv *val, size_t cardinality, size_t
 
   // shuffle the key
   for (size_t i=0; i<kv_num; i++) {
-    auto rand_ind = std::rand()%kv_num;
+    auto rand_ind = (std::rand() * (size_t)(std::rand()))%kv_num;
     auto temp = key[i];
     key[i] = key[rand_ind];
     key[rand_ind] = temp;
