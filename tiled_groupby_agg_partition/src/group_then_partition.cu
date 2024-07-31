@@ -525,8 +525,8 @@ void groupby_agg_partition(key_type *host_keys_buffer,
   cudaMallocHost(&last_host_tile_key_buffer, sizeof(key_type) * tile_len);
   cudaMallocHost(&last_host_tile_val_buffer, sizeof(val_type) * tile_len);
 
-  size_t cpu_partition_thread_num = 1;
-  size_t task_num = 1;
+  size_t cpu_partition_thread_num = 4;
+  size_t task_num = 4;
   u_int32_t *thread_local_par_rec_num;
   u_int32_t *global_par_rec_num_all_tile;
   u_int32_t *hf_val_buffer;
@@ -541,51 +541,51 @@ void groupby_agg_partition(key_type *host_keys_buffer,
   //
 
   // allocate device memory
-  // key_type **groupby_keys = (key_type **)malloc(sizeof(key_type *) * nstreams);
-  // val_type **agg_vals = (val_type **)malloc(sizeof(val_type *) * nstreams);
-  // key_type **ht_keys = (key_type **)malloc(sizeof(key_type *) * nstreams);
-  // val_type **ht_vals = (val_type **)malloc(sizeof(val_type *) * nstreams);
-  // u_int32_t **indicator = (u_int32_t **)malloc(sizeof(u_int32_t *) * nstreams);
-  // u_int32_t **par_rec_num = (u_int32_t **)malloc(sizeof(u_int32_t *) * nstreams);
+  key_type **groupby_keys = (key_type **)malloc(sizeof(key_type *) * nstreams);
+  val_type **agg_vals = (val_type **)malloc(sizeof(val_type *) * nstreams);
+  key_type **ht_keys = (key_type **)malloc(sizeof(key_type *) * nstreams);
+  val_type **ht_vals = (val_type **)malloc(sizeof(val_type *) * nstreams);
+  u_int32_t **indicator = (u_int32_t **)malloc(sizeof(u_int32_t *) * nstreams);
+  u_int32_t **par_rec_num = (u_int32_t **)malloc(sizeof(u_int32_t *) * nstreams);
 
-  // void **temp_store = (void **)malloc(sizeof(void *) * nstreams);
-  // size_t temp_store_bytes = sizeof(key_type) * tile_len;
+  void **temp_store = (void **)malloc(sizeof(void *) * nstreams);
+  size_t temp_store_bytes = sizeof(key_type) * tile_len;
 
-  // auto dev_ptr = pre_device_alloc(groupby_keys, agg_vals, ht_keys, ht_vals, indicator, par_rec_num, temp_store, tile_len, P, nstreams);
-  // //
+  auto dev_ptr = pre_device_alloc(groupby_keys, agg_vals, ht_keys, ht_vals, indicator, par_rec_num, temp_store, tile_len, P, nstreams);
+  //
 
-  // // create nstreams threads to deal with tile_num tiles, each thread is bound to a cuda stream
-  // cudaStream_t *streams = (cudaStream_t *)malloc(nstreams * sizeof(cudaStream_t));
-  // for (size_t i = 0; i < nstreams; i++) {
-  //   cudaStreamCreateWithFlags(streams + i, cudaStreamNonBlocking);
-  // }
-  // std::vector<std::thread> nthreads(nstreams);
-  // for (size_t i = 0; i < nstreams; i++)
-  // {
-  //   nthreads[i] = std::thread(groupby_agg_partition_thread<key_type, val_type>,
-  //                             groupby_keys[i],
-  //                             agg_vals[i],
-  //                             ht_keys[i],
-  //                             ht_vals[i],
-  //                             indicator[i],
-  //                             tile_num,
-  //                             tile_len,
-  //                             empty_k,
-  //                             host_collect_sz_2 + i,
-  //                             host_kv_num_4 + i,
-  //                             host_collect_sz_5 +i,
-  //                             streams[i],
-  //                             temp_store[i],
-  //                             temp_store_bytes,
-  //                             par_rec_num[i],
-  //                             P,
-  //                             std::ref(update_par_result_pool),
-  //                             host_keys_buffer,
-  //                             host_vals_buffer,
-  //                             host_par_pos,
-  //                             kv_buffer_len,
-  //                             std::ref(par_result_vec));
-  // }
+  // create nstreams threads to deal with tile_num tiles, each thread is bound to a cuda stream
+  cudaStream_t *streams = (cudaStream_t *)malloc(nstreams * sizeof(cudaStream_t));
+  for (size_t i = 0; i < nstreams; i++) {
+    cudaStreamCreateWithFlags(streams + i, cudaStreamNonBlocking);
+  }
+  std::vector<std::thread> nthreads(nstreams);
+  for (size_t i = 0; i < nstreams; i++)
+  {
+    nthreads[i] = std::thread(groupby_agg_partition_thread<key_type, val_type>,
+                              groupby_keys[i],
+                              agg_vals[i],
+                              ht_keys[i],
+                              ht_vals[i],
+                              indicator[i],
+                              tile_num,
+                              tile_len,
+                              empty_k,
+                              host_collect_sz_2 + i,
+                              host_kv_num_4 + i,
+                              host_collect_sz_5 +i,
+                              streams[i],
+                              temp_store[i],
+                              temp_store_bytes,
+                              par_rec_num[i],
+                              P,
+                              std::ref(update_par_result_pool),
+                              host_keys_buffer,
+                              host_vals_buffer,
+                              host_par_pos,
+                              kv_buffer_len,
+                              std::ref(par_result_vec));
+  }
   //
 
 
@@ -612,31 +612,31 @@ void groupby_agg_partition(key_type *host_keys_buffer,
 
   // wait all task finished
   cpu_assign_thread.join();
-  // for (size_t i = 0; i < nstreams; i++) 
-  // {
-  //   nthreads[i].join();
-  // }
+  for (size_t i = 0; i < nstreams; i++) 
+  {
+    nthreads[i].join();
+  }
   
   update_par_result_pool.wait_for_tasks();
   //
 
   // free phase
-  // for (size_t i = 0; i < nstreams; i++) {
-  //   cudaStreamDestroy(streams[i]);
-  // }
+  for (size_t i = 0; i < nstreams; i++) {
+    cudaStreamDestroy(streams[i]);
+  }
 
-  // cudaFree(dev_ptr);
-  // cudaFreeHost(host_par_pos);
-  // cudaFreeHost(host_collect_sz_2);
-  // cudaFreeHost(host_kv_num_4);
-  // cudaFreeHost(host_collect_sz_5);
-  // free(groupby_keys);
-  // free(agg_vals);
-  // free(ht_keys);
-  // free(ht_vals);
-  // free(indicator);
-  // free(par_rec_num);
-  // free(streams);
+  cudaFree(dev_ptr);
+  cudaFreeHost(host_par_pos);
+  cudaFreeHost(host_collect_sz_2);
+  cudaFreeHost(host_kv_num_4);
+  cudaFreeHost(host_collect_sz_5);
+  free(groupby_keys);
+  free(agg_vals);
+  free(ht_keys);
+  free(ht_vals);
+  free(indicator);
+  free(par_rec_num);
+  free(streams);
 
 }
 

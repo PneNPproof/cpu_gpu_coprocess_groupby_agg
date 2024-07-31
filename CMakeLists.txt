@@ -5,9 +5,13 @@ project(tiled_groupby_agg_partition_lib_and_test LANGUAGES CXX CUDA)
 # # specify the C++ standard
 # set(CMAKE_CXX_STANDARD 17)
 # set(CMAKE_CXX_STANDARD_REQUIRED True)
+
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
-set(CMAKE_BUILD_TYPE Debug)
 set(CMAKE_VERBOSE_MAKEFILE ON)
+
+# set(CMAKE_BUILD_TYPE Debug)
+set(CMAKE_BUILD_TYPE Release)
+
 # add_definitions(-DMEASURE_TIME -DMEASURE_TIME_2)
 
 set(STATIC_LIB_PATH ${PROJECT_SOURCE_DIR}/lib)
