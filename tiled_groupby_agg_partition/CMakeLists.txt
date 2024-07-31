@@ -12,6 +12,8 @@ set(CMAKE_CXX_STANDARD_REQUIRED TRUE)
 
 # set(CMAKE_CUDA_FLAGS "${CMAKE_CUDA_FLAGS} -G -g")
 set(CMAKE_BUILD_TYPE Release)
+
+
 set(TARGET_NAME ${STATIC_LIB_NAME})
 
 include_directories(${PROJECT_SOURCE_DIR}/include)

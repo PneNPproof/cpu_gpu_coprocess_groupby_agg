@@ -539,6 +539,13 @@ void groupby_agg_partition(key_type *host_keys_buffer,
     cudaStreamCreateWithFlags(streams + i, cudaStreamNonBlocking);
   }
   BS::thread_pool update_par_result_pool(UPDATE_PAR_RESULT_THREAD_NUM);
+
+
+  RuntimeMeasurement timer_phase1;
+  timer_phase1.start();
+
+
+
   std::vector<std::thread> nthreads(nstreams);
   for (size_t i = 0; i < nstreams; i++)
   {
@@ -576,6 +583,9 @@ void groupby_agg_partition(key_type *host_keys_buffer,
   }
   update_par_result_pool.wait_for_tasks();
   //
+
+  timer_phase1.stop();
+  timer_phase1.print_elapsed_time("phase 1");
 
   // free phase
   for (size_t i = 0; i < nstreams; i++) {
