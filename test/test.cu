@@ -7,6 +7,7 @@
 #include <string>
 #include <cmath>
 #include <ctime>
+#include <chrono>
 #include <cuda_runtime.h>
 
 #include "data_generator.hpp"
@@ -89,6 +90,8 @@ int main(int argc, char *argv[])
   query_gpu_info();
 
   CLI::App app;
+  k_type kt_max = 0xfffffffe;
+  v_type vt_max = 0xffffffff;
   size_t kv_num = 1e10;
   size_t cardinality_percentage = 10;
   int dist_kind = 0;
@@ -105,31 +108,37 @@ int main(int argc, char *argv[])
   size_t min_load_num = Capacity * 3 / 5;
   size_t max_load_num = Capacity * 4 / 5;
 
-  // allocate host_keys and host_vals
   
-  // size_t cardinality = 9e7;
   size_t cardinality = kv_num * cardinality_percentage / 100;
   double skew_factor = 0.9;
-  k_type empty_key = 0xffffffff;
 
   k_type *host_keys;
   v_type *host_vals;
-  // u_int32_t *host_probe_num;
-  // k_type *host_ht_keys;
 
   cudaMallocHost(&host_keys, sizeof(k_type) * kv_num);
   cudaMallocHost(&host_vals, sizeof(v_type) * kv_num);
-  // cudaMallocHost(&host_probe_num, sizeof(u_int32_t) * kv_num);
-  // cudaMallocHost(&host_ht_keys, sizeof(k_type) * kv_num);
 
-  // for generate random dist and hf
+  /// generate kv
   // std::srand(std::time(nullptr));
   // std::random_device r;
   // std::default_random_engine generator(r());
-  std::default_random_engine generator;
-
-  // generate kv
-  generate_various_dist_kv_array<k_type, v_type>(host_keys, host_vals, cardinality, kv_num, skew_factor, generator, dist_kind, empty_key);
+  // std::default_random_engine generator;
+  // k_type empty_key = 0xffffffff;
+  // generate_various_dist_kv_array<k_type, v_type>(host_keys, host_vals, cardinality, kv_num, skew_factor, generator, dist_kind, empty_key);
+  auto start_time = std::chrono::steady_clock::now();
+  generate_various_dist_kv_set_multithread<k_type, v_type>(host_keys,
+                                           host_vals,
+                                           cardinality,
+                                           kv_num,
+                                           skew_factor,
+                                           dist_kind,
+                                           kt_max,
+                                           vt_max);
+  auto end_time = std::chrono::steady_clock::now();
+  auto duration = std::chrono::duration_cast<std::chrono::microseconds>(end_time - start_time);
+  std::cout << "generate_various_dist_kv_set_multithread kv_num " <<kv_num << " cardinality " << cardinality << " elapsed time: " << duration.count() << " microseconds\n";
+  
+  ///
 
   std::vector<par_result> par_result_vec(P);
   gpu_warm_up();
@@ -142,9 +151,7 @@ int main(int argc, char *argv[])
                                         par_result_vec,
                                         nstreams);
   
-  // for (size_t i=0; i<P; i++){
-  //   std::cout<<par_result_vec[i].size<<std::endl;
-  // }
+  
   key_type *host_groupby_keys_result;
   val_type *host_agg_vals_result;
   std::vector<size_t> par_kv_begin;

@@ -18,6 +18,7 @@
 - [ ] seem to have bugs for small data
 - [ ] if cpu gpu murmur3hash same
 - [ ] data generate algorithm need to be adjusted to generate larger range data(seem to lead to result bug for 1e10 size kv and 1e9 size cardinality)
+- [ ] smaller data chunk for more balanced work load for every thread
 ## project log
 ### 20240731
 1. cpu_partition_thread global_par_rec_num only one for many tile, but update par_result_vec require global_par_rec_num, but don't ensure that next tile use global_par_rec_num after used by update par_result_vec  

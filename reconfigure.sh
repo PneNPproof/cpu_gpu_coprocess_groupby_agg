@@ -1,4 +1,4 @@
 cmake --version
 rm -rf build
-cmake -S . -B build -G Ninja
+cmake -S . -B build
 cmake --build build -j
