@@ -7,6 +7,7 @@
 
 #include "kernel.cuh"
 #include "util.cuh"
+#include "cpu_groupby_agg_intra_partition.cuh"
 
 size_t g_par_counter;
 std::mutex g_par_counter_mutex;
@@ -468,8 +469,29 @@ void groupby_agg_intra_partition(std::vector<par_result> &par_result_vec,
                               std::ref(par_result_kv_num));               
   }
 
+  /// assign cpu task
+  size_t cpu_groupby_agg_threads_num = 4;
+  std::vector<std::thread> cpu_groupby_agg_threads(cpu_groupby_agg_threads_num);
+  for (size_t i = 0; i < cpu_groupby_agg_threads_num; i++)
+  {
+    cpu_groupby_agg_threads[i] = std::thread(cpu_groupby_agg_intra_partition_thread,
+                                             std::ref(par_result_vec),
+                                             par_num,
+                                             host_groupby_keys_result,
+                                             host_agg_vals_result,
+                                             std::ref(par_kv_begin),
+                                             std::ref(par_result_kv_num));
+  }
+  ///
+
+
   for (int i = 0; i < nstreams; i++) {
     nthreads[i].join();
+  }
+
+  for (size_t i = 0; i < cpu_groupby_agg_threads_num; i++)
+  {
+    cpu_groupby_agg_threads[i].join();
   }
 
   timer_phase2.stop();
