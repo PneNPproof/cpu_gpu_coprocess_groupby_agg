@@ -87,5 +87,6 @@ void cpu_groupby_agg_intra_partition_thread(std::vector<par_result> &par_result_
 
     par_result_kv_num[par_ind] = par_result_num;
     
+    break;
   }
 }

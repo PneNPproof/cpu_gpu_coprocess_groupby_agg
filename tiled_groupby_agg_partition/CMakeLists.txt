@@ -25,6 +25,7 @@ add_library(${TARGET_NAME} STATIC
             ${PROJECT_SOURCE_DIR}/src/par_result.cu
             ${PROJECT_SOURCE_DIR}/src/cpu_partition.cu
             ${PROJECT_SOURCE_DIR}/src/MurmurHash3.cu
+            ${PROJECT_SOURCE_DIR}/src/cpu_groupby_agg_intra_partition.cu
            )     
 
 set_target_properties(${TARGET_NAME} PROPERTIES CUDA_ARCHITECTURES "80" ARCHIVE_OUTPUT_DIRECTORY ${STATIC_LIB_PATH})
