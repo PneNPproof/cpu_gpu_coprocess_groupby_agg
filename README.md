@@ -17,7 +17,7 @@
 - [ ] cpu collect into host_key_buffer(the first tile cpu process need to copy to a extra buffer, other tile cpu process could be collect to last tile cpu process)
 - [ ] seem to have bugs for small data
 - [ ] if cpu gpu murmur3hash same
-- [ ] data generate algorithm need to be adjusted to generate larger range data(seem to lead to result bug for 1e10 size kv and 1e9 size cardinality)
+- [x] data generate algorithm need to be adjusted to generate larger range data(seem to lead to result bug for 1e10 size kv and 1e9 size cardinality)
 - [ ] smaller data chunk for more balanced work load for every thread
 ## project log
 ### 20240731
