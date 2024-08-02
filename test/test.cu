@@ -90,12 +90,13 @@ int main(int argc, char *argv[])
   query_gpu_info();
 
   CLI::App app;
-  k_type kt_max = 0xfffffffe;
+  k_type kt_max_version_1 = 0xffffffff;
+  k_type kt_max = 0xffffffff;
   v_type vt_max = 0xffffffff;
-  size_t kv_num = 1e10;
+  size_t kv_num = 1e9;
   size_t cardinality_percentage = 10;
   int dist_kind = 0;
-  size_t tile_len = 1e8;
+  size_t tile_len = 1e7;
   size_t P = 300;
   size_t nstreams = 4;
   app.add_option("-n", kv_num);
@@ -126,14 +127,14 @@ int main(int argc, char *argv[])
   // k_type empty_key = 0xffffffff;
   // generate_various_dist_kv_array<k_type, v_type>(host_keys, host_vals, cardinality, kv_num, skew_factor, generator, dist_kind, empty_key);
   auto start_time = std::chrono::steady_clock::now();
-  generate_various_dist_kv_set_multithread<k_type, v_type>(host_keys,
-                                           host_vals,
-                                           cardinality,
-                                           kv_num,
-                                           skew_factor,
-                                           dist_kind,
-                                           kt_max,
-                                           vt_max);
+  generate_various_dist_kv_set_multithread_version_2<k_type, v_type>(host_keys,
+                                                                      host_vals,
+                                                                      cardinality,
+                                                                      kv_num,
+                                                                      skew_factor,
+                                                                      dist_kind,
+                                                                      kt_max,
+                                                                      vt_max);
   auto end_time = std::chrono::steady_clock::now();
   auto duration = std::chrono::duration_cast<std::chrono::microseconds>(end_time - start_time);
   std::cout << "generate_various_dist_kv_set_multithread kv_num " <<kv_num << " cardinality " << cardinality << " elapsed time: " << duration.count() << " microseconds\n";

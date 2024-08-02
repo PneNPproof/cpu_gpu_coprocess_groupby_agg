@@ -1,10 +1,12 @@
 #pragma once
 
 #include <unordered_set>
+#include <set>
 #include <thread>
 #include <algorithm>
 #include "selfsimilar_int_distribution.h"
 #include "zipfian_int_distribution.h"
+#include "BS_thread_pool.hpp"
 
 
 template <typename Tk, typename Tv>
@@ -188,19 +190,26 @@ void generate_various_dist_kv_set_multithread(key_type *keys,
   std::mt19937 gen(rd());
   std::uniform_int_distribution<key_type> distrib(0, kt_max);
 
-  size_t thread_num = 8;
+  size_t thread_num = 24;
+  
   std::vector<std::thread> threads;
-  std::vector<size_t> thread_interval_len(thread_num);
-  std::vector<size_t> thread_interval_len_scan(thread_num);
+  std::vector<size_t> thread_interval_len;
+  std::vector<size_t> thread_interval_len_scan;
   size_t all_interval_len = kt_max + 1;
+  auto partial_sum_interval_len = all_interval_len;
 
   for (size_t i = 0; i < thread_num; i++)
   {
     auto thread_interval_a = i * (all_interval_len) / thread_num;
     auto thread_interval_b = (i + 1) * (all_interval_len) / thread_num - 1;
     thread_interval_len.push_back(thread_interval_b - thread_interval_a + 1);
-    all_interval_len -= thread_interval_len[i];
-    thread_interval_len_scan.push_back(all_interval_len);
+    partial_sum_interval_len -= thread_interval_len[i];
+    thread_interval_len_scan.push_back(partial_sum_interval_len);
+
+    // printf("thread_interval_a %ld\n", thread_interval_a);
+    // printf("thread_interval_b %ld\n", thread_interval_b);
+    // printf("partial_sum_interval_len %ld\n", partial_sum_interval_len);
+    // printf("thread_interval_len %ld\n", thread_interval_len[i]);
   }
 
   
@@ -231,8 +240,6 @@ void generate_various_dist_kv_set_multithread(key_type *keys,
 
     ///
 
-    already_produce += thread_produce;
-    
     auto thread_interval_a = i * (all_interval_len) / thread_num;
     auto thread_interval_b = (i + 1) * (all_interval_len) / thread_num - 1;
 
@@ -240,8 +247,12 @@ void generate_various_dist_kv_set_multithread(key_type *keys,
                          thread_interval_a,
                          thread_interval_b,
                          thread_produce,
-                         keys,
+                         keys + already_produce,
                          kt_max);
+
+    already_produce += thread_produce;
+
+    printf("thread_produce %ld\n", thread_produce);
 
   }
 
@@ -251,6 +262,27 @@ void generate_various_dist_kv_set_multithread(key_type *keys,
   }
 
   threads.clear();
+
+
+  /// verify correctness
+  // std::set<key_type> set;
+
+  // for (size_t i = 0; i < cardinality; i++)
+  // {
+  //   set.insert(keys[i]);
+  // }
+  // if (set.size() == cardinality)
+  // {
+  //   printf("The correctness test of the generated kv passed\n\n");
+  // }
+  // else
+  // {
+  //   printf("The correctness test of the generated kv failed(in fact cardinality %ld)\n\n", set.size());
+  // }
+  ///
+
+
+
 
   /// now generate rest keys
 
@@ -296,6 +328,122 @@ void generate_various_dist_kv_set_multithread(key_type *keys,
   threads.clear();
 
   ///
+
+  printf("generate complete\n\n");
+}
+
+
+
+template <typename key_type, typename val_type>
+void generate_various_dist_kv_set_multithread_version_2(key_type *keys,
+                                                        val_type *vals,
+                                                        size_t cardinality,
+                                                        size_t kv_num,
+                                                        double skew_factor,
+                                                        int dist_kind,
+                                                        key_type kt_max,
+                                                        val_type vt_max)
+{
+  // key don't use kt_max, kt_max as empty_key
+  std::random_device rd;
+  std::mt19937 gen(rd());
+  std::uniform_int_distribution<key_type> distrib(0, kt_max);
+
+  size_t thread_num = 24;
+  BS::thread_pool gen_keys_pool(thread_num);
+  size_t task_num = thread_num * 2;
+
+  std::vector<size_t> gen_kv_num_each_task;// record kv num each task gen
+  std::vector<size_t> rest_task_kv_num_total;
+  size_t rest_key_num = cardinality;
+
+  for (size_t i = 0; i < task_num; i++)
+  {
+    auto gen_kv_begin = i * cardinality / task_num;
+    auto gen_kv_end = (i + 1) * cardinality / task_num;
+    gen_kv_num_each_task.push_back(gen_kv_end - gen_kv_begin);
+    rest_task_kv_num_total.push_back(rest_key_num-=gen_kv_num_each_task[i]);
+  }
+
+  /// decide in which interval each task should produce keys and assign tasks to threads pool
+  size_t last_task_right_end = 0; // last interval open end
+  size_t current_task_left_end;
+  size_t current_task_right_end;
+  size_t already_produced_key_num = 0;
+  for (size_t i = 0; i < task_num; i++)
+  {
+    current_task_left_end = last_task_right_end;
+    auto current_task_right_end_max = kt_max - rest_task_kv_num_total[i];
+    auto current_task_right_end_min = current_task_left_end + gen_kv_num_each_task[i];
+
+    /// random produce current_task_right_end
+    current_task_right_end = current_task_right_end_min + (distrib(gen) % (current_task_right_end_max - current_task_right_end_min + 1));
+    ///
+    last_task_right_end = current_task_right_end;
+
+    gen_keys_pool.push_task(generate_m_num_in_interval<key_type>,
+                            current_task_left_end,
+                            current_task_right_end - 1,
+                            gen_kv_num_each_task[i],
+                            keys + already_produced_key_num,
+                            kt_max);
+
+    already_produced_key_num += gen_kv_num_each_task[i];
+  }
+  ///
+
+  gen_keys_pool.wait_for_tasks();
+  
+
+  /// verify correctness
+  // std::set<key_type> set;
+
+  // for (size_t i = 0; i < cardinality; i++)
+  // {
+  //   set.insert(keys[i]);
+  // }
+  // if (set.size() == cardinality)
+  // {
+  //   printf("The correctness test of the generated kv passed\n\n");
+  // }
+  // else
+  // {
+  //   printf("The correctness test of the generated kv failed(in fact cardinality %ld)\n\n", set.size());
+  // }
+  ///
+
+
+  /// now assign generate-rest-keys tasks
+
+  rest_key_num = kv_num - cardinality;
+
+  for (size_t i = 0; i < task_num; i++)
+  {
+    auto task_keys_begin = cardinality + i * rest_key_num / task_num;
+    auto task_keys_end = cardinality + (i + 1) * rest_key_num / task_num;
+    gen_keys_pool.push_task(generate_keys<key_type>,
+                            task_keys_begin,
+                            task_keys_end,
+                            cardinality,
+                            keys);
+  }
+
+  ///
+
+  /// now assign generate-vals tasks
+  for (size_t i = 0; i < task_num; i++)
+  {
+    auto task_vals_begin = i * kv_num / task_num;
+    auto task_vals_end = (i + 1) * kv_num / task_num;
+    gen_keys_pool.push_task(generate_vals<val_type>,
+                            task_vals_begin,
+                            task_vals_end,
+                            vt_max,
+                            vals);
+  }
+  ///
+
+  gen_keys_pool.wait_for_tasks();
 
   printf("generate complete\n\n");
 }
