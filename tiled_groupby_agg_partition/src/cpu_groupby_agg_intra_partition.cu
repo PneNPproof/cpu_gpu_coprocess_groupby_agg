@@ -5,6 +5,7 @@
 #include <mutex>
 #include <thread>
 #include <unordered_map>
+#include <map>
 
 extern std::mutex g_par_counter_mutex;
 extern size_t g_par_counter;
@@ -57,6 +58,7 @@ void cpu_groupby_agg_intra_partition_thread(std::vector<par_result> &par_result_
     par_result_in_continous_mem(pr, keys, vals);
 
     std::unordered_map<key_type, val_type> ht;
+    // std::map<key_type, val_type> ht;
     auto par_kv_num = pr.size;
     /// insert kv into ht
     for (size_t i = 0; i < par_kv_num; i++)

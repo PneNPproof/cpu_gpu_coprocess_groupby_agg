@@ -21,6 +21,7 @@
 - [x] more balanced work load for every thread in data gen process
 - [ ] more robust memory manage
 - [ ] par_result_in_continous_mem with all cpu threads before second phase
+- [ ] in second phase, one cpu thread process one par seems too slow
 ## project log
 ### 20240731
 1. cpu_partition_thread global_par_rec_num only one for many tile, but update par_result_vec require global_par_rec_num, but don't ensure that next tile use global_par_rec_num after used by update par_result_vec  
@@ -37,3 +38,7 @@
 |--------|-------------------|-------------------|
 |gpu process|10844617|6801217|
 |coprocess 12 core cpu|7542422|6898564|
+|coprocess 12 core cpu 1 phase 4 core 2 phase|7355064|32863246|
+
+### 20240802
+1. cpu seems two slow in second phase, consider first partition and then use multi map to get result

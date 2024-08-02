@@ -470,18 +470,18 @@ void groupby_agg_intra_partition(std::vector<par_result> &par_result_vec,
   }
 
   /// assign cpu task
-  // size_t cpu_groupby_agg_threads_num = 4;
-  // std::vector<std::thread> cpu_groupby_agg_threads(cpu_groupby_agg_threads_num);
-  // for (size_t i = 0; i < cpu_groupby_agg_threads_num; i++)
-  // {
-  //   cpu_groupby_agg_threads[i] = std::thread(cpu_groupby_agg_intra_partition_thread,
-  //                                            std::ref(par_result_vec),
-  //                                            par_num,
-  //                                            host_groupby_keys_result,
-  //                                            host_agg_vals_result,
-  //                                            std::ref(par_kv_begin),
-  //                                            std::ref(par_result_kv_num));
-  // }
+  size_t cpu_groupby_agg_threads_num = 4;
+  std::vector<std::thread> cpu_groupby_agg_threads(cpu_groupby_agg_threads_num);
+  for (size_t i = 0; i < cpu_groupby_agg_threads_num; i++)
+  {
+    cpu_groupby_agg_threads[i] = std::thread(cpu_groupby_agg_intra_partition_thread,
+                                             std::ref(par_result_vec),
+                                             par_num,
+                                             host_groupby_keys_result,
+                                             host_agg_vals_result,
+                                             std::ref(par_kv_begin),
+                                             std::ref(par_result_kv_num));
+  }
   ///
 
 
@@ -489,10 +489,10 @@ void groupby_agg_intra_partition(std::vector<par_result> &par_result_vec,
     nthreads[i].join();
   }
 
-  // for (size_t i = 0; i < cpu_groupby_agg_threads_num; i++)
-  // {
-  //   cpu_groupby_agg_threads[i].join();
-  // }
+  for (size_t i = 0; i < cpu_groupby_agg_threads_num; i++)
+  {
+    cpu_groupby_agg_threads[i].join();
+  }
 
   timer_phase2.stop();
   timer_phase2.print_elapsed_time("phase 2");
