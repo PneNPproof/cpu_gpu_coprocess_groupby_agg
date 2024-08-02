@@ -6,7 +6,7 @@
 #include "util.cuh"
 #include "cpu_partition.cuh"
 
-#define UPDATE_PAR_RESULT_THREAD_NUM 1
+#define UPDATE_PAR_RESULT_THREAD_NUM 4
 
 std::mutex g_counter_mutex;
 std::mutex g_pool_mutex;
@@ -519,14 +519,14 @@ void groupby_agg_partition(key_type *host_keys_buffer,
   cudaMallocHost(&host_kv_num_4, sizeof(u_int32_t) * nstreams);
   cudaMallocHost(&host_collect_sz_5, sizeof(u_int32_t) * nstreams);
 
-  // allocate for cpu partition
+  /// allocate for cpu partition
   key_type *last_host_tile_key_buffer;
   val_type *last_host_tile_val_buffer;
   cudaMallocHost(&last_host_tile_key_buffer, sizeof(key_type) * tile_len);
   cudaMallocHost(&last_host_tile_val_buffer, sizeof(val_type) * tile_len);
 
-  size_t cpu_partition_thread_num = 3;
-  size_t task_num = 3;
+  size_t cpu_partition_thread_num = 12;
+  size_t task_num = 12;
   u_int32_t *thread_local_par_rec_num;
   u_int32_t *global_par_rec_num_all_tile;
   u_int32_t *hf_val_buffer;
@@ -536,11 +536,10 @@ void groupby_agg_partition(key_type *host_keys_buffer,
   cudaMallocHost(&hf_val_buffer, sizeof(u_int32_t) * tile_len);
   cudaMallocHost(&collect_loc_buffer, sizeof(u_int32_t) * tile_len);
   memset(global_par_rec_num_all_tile, 0x00, sizeof(u_int32_t) * (P + 1) * tile_num);
-  //
+  ///
 
-  //
 
-  // allocate device memory
+  /// allocate device memory
   key_type **groupby_keys = (key_type **)malloc(sizeof(key_type *) * nstreams);
   val_type **agg_vals = (val_type **)malloc(sizeof(val_type *) * nstreams);
   key_type **ht_keys = (key_type **)malloc(sizeof(key_type *) * nstreams);
@@ -552,7 +551,7 @@ void groupby_agg_partition(key_type *host_keys_buffer,
   size_t temp_store_bytes = sizeof(key_type) * tile_len;
 
   auto dev_ptr = pre_device_alloc(groupby_keys, agg_vals, ht_keys, ht_vals, indicator, par_rec_num, temp_store, tile_len, P, nstreams);
-  //
+  ///
 
   // create nstreams threads to deal with tile_num tiles, each thread is bound to a cuda stream
   cudaStream_t *streams = (cudaStream_t *)malloc(nstreams * sizeof(cudaStream_t));
@@ -639,10 +638,14 @@ void groupby_agg_partition(key_type *host_keys_buffer,
   cudaFreeHost(host_collect_sz_2);
   cudaFreeHost(host_kv_num_4);
   cudaFreeHost(host_collect_sz_5);
-  cudaFreeHost(hf_val_buffer);
-  cudaFreeHost(collect_loc_buffer);
-  cudaFreeHost(thread_local_par_rec_num);
-  cudaFreeHost(global_par_rec_num_all_tile);
+
+
+  // cudaFreeHost(hf_val_buffer);
+  // cudaFreeHost(collect_loc_buffer);
+  // cudaFreeHost(thread_local_par_rec_num);
+  // cudaFreeHost(global_par_rec_num_all_tile);
+
+
   free(groupby_keys);
   free(agg_vals);
   free(ht_keys);

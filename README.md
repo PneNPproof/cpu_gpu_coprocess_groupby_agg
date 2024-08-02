@@ -18,7 +18,8 @@
 - [ ] seem to have bugs for small data
 - [ ] if cpu gpu murmur3hash same
 - [x] data generate algorithm need to be adjusted to generate larger range data(seem to lead to result bug for 1e10 size kv and 1e9 size cardinality)
-- [ ] smaller data chunk for more balanced work load for every thread
+- [x] more balanced work load for every thread in data gen process
+- [ ] more robust memory manage
 - [ ] par_result_in_continous_mem with all cpu threads before second phase
 ## project log
 ### 20240731
@@ -32,4 +33,7 @@
 |gpu process|10743459|6963389|
 |coprocess|9337422|6947422|
 
-
+| method   | phase 1 time (us) | phase 2 time (us) |
+|--------|-------------------|-------------------|
+|gpu process|10844617|6801217|
+|coprocess 12 core cpu|7542422|6898564|
