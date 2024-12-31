@@ -9,4 +9,5 @@ void groupby_agg_partition(key_type *host_keys_buffer,
                            size_t tile_len,
                            size_t P,
                            std::vector<par_result> &par_result_vec,
-                           size_t nstreams);
+                           size_t nstreams,
+                           size_t phase1_cpu_worker_num);

@@ -12,7 +12,8 @@ set(CMAKE_VERBOSE_MAKEFILE ON)
 # set(CMAKE_BUILD_TYPE Debug)
 set(CMAKE_BUILD_TYPE Release)
 
-# add_definitions(-DMEASURE_TIME -DMEASURE_TIME_2)
+# add_definitions(-DMEASURE_TIME)
+# add_definitions(-DMEASURE_TIME_2)
 
 set(STATIC_LIB_PATH ${PROJECT_SOURCE_DIR}/lib)
 set(STATIC_LIB_NAME tiled_groupby_agg_partition)

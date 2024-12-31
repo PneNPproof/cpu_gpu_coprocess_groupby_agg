@@ -356,15 +356,18 @@ void groupby_agg_intra_partition_thread(std::vector<par_result> &par_result_vec,
 
 
 
-void groupby_agg_intra_partition(std::vector<par_result> &par_result_vec,
-                                      key_type *&host_groupby_keys_result,
-                                      val_type *&host_agg_vals_result,
-                                      size_t Capacity,
-                                      size_t min_load_num,
-                                      size_t max_load_num,
-                                      size_t nstreams,
-                                      std::vector<size_t> &par_kv_begin,
-                                      std::vector<size_t> &par_result_kv_num)
+void groupby_agg_intra_partition(
+  std::vector<par_result> &par_result_vec,
+  key_type *&host_groupby_keys_result,
+  val_type *&host_agg_vals_result,
+  size_t Capacity,
+  size_t min_load_num,
+  size_t max_load_num,
+  size_t nstreams,
+  std::vector<size_t> &par_kv_begin,
+  std::vector<size_t> &par_result_kv_num,
+  size_t phase2_cpu_worker_num
+)
 {
   // Merge partitions to make the partition size as close to K as possible 
   par_result_vec = merge_partition(par_result_vec, min_load_num);
@@ -470,7 +473,7 @@ void groupby_agg_intra_partition(std::vector<par_result> &par_result_vec,
   }
 
   /// assign cpu task
-  size_t cpu_groupby_agg_threads_num = 4;
+  size_t cpu_groupby_agg_threads_num = phase2_cpu_worker_num;
   std::vector<std::thread> cpu_groupby_agg_threads(cpu_groupby_agg_threads_num);
   for (size_t i = 0; i < cpu_groupby_agg_threads_num; i++)
   {

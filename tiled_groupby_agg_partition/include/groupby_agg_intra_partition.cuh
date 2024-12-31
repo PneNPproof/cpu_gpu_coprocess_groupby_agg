@@ -10,4 +10,5 @@ void groupby_agg_intra_partition(std::vector<par_result> &par_result_vec,
                                       size_t max_load_num,
                                       size_t nstreams,
                                       std::vector<size_t> &par_kv_begin,
-                                      std::vector<size_t> &par_result_kv_num);
+                                      std::vector<size_t> &par_result_kv_num,
+                                      size_t phase2_cpu_worker_num);

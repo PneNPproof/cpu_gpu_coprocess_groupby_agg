@@ -502,7 +502,8 @@ void groupby_agg_partition(key_type *host_keys_buffer,
                            size_t tile_len,
                            size_t P,
                            std::vector<par_result> &par_result_vec,
-                           size_t nstreams)
+                           size_t nstreams,
+                           size_t phase1_cpu_worker_num)
 {
   auto tile_num = (kv_buffer_len + tile_len - 1) / tile_len;
   g_counter = 0;
@@ -525,8 +526,8 @@ void groupby_agg_partition(key_type *host_keys_buffer,
   cudaMallocHost(&last_host_tile_key_buffer, sizeof(key_type) * tile_len);
   cudaMallocHost(&last_host_tile_val_buffer, sizeof(val_type) * tile_len);
 
-  size_t cpu_partition_thread_num = 12;
-  size_t task_num = 12;
+  size_t cpu_partition_thread_num = phase1_cpu_worker_num;
+  size_t task_num = phase1_cpu_worker_num;
   u_int32_t *thread_local_par_rec_num;
   u_int32_t *global_par_rec_num_all_tile;
   u_int32_t *hf_val_buffer;
@@ -664,4 +665,5 @@ void groupby_agg_partition(key_type *host_keys_buffer,
                            size_t tile_len,
                            size_t P,
                            std::vector<par_result> &par_result_vec,
-                           size_t nstreams);
+                           size_t nstreams,
+                           size_t phase1_cpu_worker_num);
